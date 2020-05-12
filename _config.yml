@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: An A to Z of Machine Learning
-description: My blog for refining my thinking and understanding of machine learning topics. 
+description: A place for refining my thinking and understanding of machine learning topics. 
 github_username: educatorsRlearners
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "an-a-z-of-machine-learning"
