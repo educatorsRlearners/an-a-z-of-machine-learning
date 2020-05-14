@@ -1,5 +1,5 @@
 ---
-toc: true
+toc: false
 layout: post
 description: Purpose behind starting another machine learning blog.
 categories: [motivation]
