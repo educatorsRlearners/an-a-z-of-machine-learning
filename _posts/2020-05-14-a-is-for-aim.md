@@ -21,8 +21,7 @@ As for coding tutorials, again, won't everything I create have already been done
 While the answer to both of the questions above is more likely than not **"yes"**, it doesn't detract from the actual aim of this enterprise which is to provide a space for me to solidify my understanding of data science/ machine learning. How? 
 
 ## Standing on the Shoulders of Giants
-
-![]({{ site.baseurl }}images/Richard_Feynman_Nobel.jpg credit"https://en.wikipedia.org/wiki/Richard_Feynman") 
+![]({{ site.baseurl }}/images/about.jpg "Presenting in Nanjing, PRC")
 
 People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynam famous for his work on quantom mechanics but especially to Americans of my generation for his explanation of the [Challenger disaster](https://youtu.be/raMmRKGkGD4?t=38).
 
