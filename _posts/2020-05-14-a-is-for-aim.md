@@ -12,7 +12,7 @@ title: A is for Aim
 
 Good question. 
 
-True, I already have two blogs: one on [EdTech](https://teachinglearninglearningteaching.wordpress.com/) and another on using [R for data visualization](https://educators-r-learners.netlify.app/). However, the real question is if a Google search for "data science blog" returns nearsly half a BILLION results[^1], why should ***I*** create one? 
+True, I already have two blogs: one on [EdTech](https://teachinglearninglearningteaching.wordpress.com/) and another on using [R for data visualization](https://educators-r-learners.netlify.app/). However, the real question is if a Google search for "data science blog" returns nearly half a BILLION results[^1], why should ***I*** create one? 
 
 Surely any opinion piece I write will have been written better by someone more qualified, right?
 
@@ -22,7 +22,7 @@ While the answer to both of the questions above is more likely than not **"yes"*
 
 ## Standing on the Shoulders of Giants
 
-![]({{ site.baseurl }}/images/Richard_Feynman_Nobel.jpg credit"https://en.wikipedia.org/wiki/Richard_Feynman") 
+![]({{ site.baseurl }}/images/Richard_Feynman_Nobel.jpg)
 
 People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynam famous for his work on quantom mechanics but especially to Americans of my generation for his explanation of the [Challenger disaster](https://youtu.be/raMmRKGkGD4?t=38).
 
