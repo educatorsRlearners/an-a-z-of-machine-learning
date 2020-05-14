@@ -3,8 +3,8 @@ toc: true
 layout: post
 description: Purpose behind starting another machine learning blog.
 categories: [motivation]
-sticky_rank: 1
-hide: false
+sticky_rank: 2
+hide: true
 title: R is for Resources
 ---
 
