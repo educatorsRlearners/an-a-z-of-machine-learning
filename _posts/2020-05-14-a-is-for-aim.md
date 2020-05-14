@@ -3,9 +3,9 @@ toc: true
 layout: post
 description: Purpose behind starting another machine learning blog.
 categories: [motivation]
+draft: true
 title: A is for AIM
 ---
-# A is for AIM
 
 ## Basic setup
 
