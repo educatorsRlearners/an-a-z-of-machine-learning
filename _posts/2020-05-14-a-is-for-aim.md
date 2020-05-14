@@ -22,7 +22,15 @@ While the answer to both of the questions above is more likely than not **"yes"*
 
 ## Standing on the Shoulders of Giants
 
-![](https://en.wikipedia.org/wiki/Richard_Feynman#/media/File:Richard_Feynman_Nobel.jpg) 
+![](images/Richard_Feynman_Nobel.jpg credit"https://en.wikipedia.org/wiki/Richard_Feynman") 
+
+People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynam famous for his work on quantom mechanics but especially to Americans of my generation for his explanation of the [Challenger disaster](https://youtu.be/raMmRKGkGD4?t=38).
+
+Why do I mention him? Feynman's ["notebook technique"](https://www.youtube.com/watch?v=GD-_fcpylcE) is a model for learning anything:   
+1. Write down the concept you wish to master
+2. Explain the concept in comprehensible language
+3. Revise ides/concepts which you can't explain well enough
+4. Identify complex areas and think of how to simplify them further (i.e., create analogies)
 
 
 ### Footnotes
