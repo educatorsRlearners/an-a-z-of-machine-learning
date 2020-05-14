@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Purpose behind starting another machine learning blog.
 categories: [motivation]
-draft: true
+hide: true
 title: A is for AIM
 ---
 
