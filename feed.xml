@@ -1,22 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-14T15:26:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for AIM</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for AIM" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/a-is-for-aim.html">&lt;h2 id=&quot;why-write-another-blog&quot;&gt;&lt;em&gt;Why write another blog?&lt;/em&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-14T16:55:54-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for Aim</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for Aim" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html">&lt;h2 id=&quot;why-another-blog&quot;&gt;&lt;strong&gt;&lt;em&gt;Why another blog?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;Good question.&lt;/p&gt;
 
-&lt;p&gt;True, I already have two blogs: one on &lt;a href=&quot;https://teachinglearninglearningteaching.wordpress.com/&quot;&gt;EdTech&lt;/a&gt; and another on using &lt;a href=&quot;https://educators-r-learners.netlify.app/&quot;&gt;R for data visualization&lt;/a&gt;. However, the real question is if there are nearly half a BILLION data science blogs already in existence&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, why should I write create one?&lt;/p&gt;
+&lt;p&gt;True, I already have two blogs: one on &lt;a href=&quot;https://teachinglearninglearningteaching.wordpress.com/&quot;&gt;EdTech&lt;/a&gt; and another on using &lt;a href=&quot;https://educators-r-learners.netlify.app/&quot;&gt;R for data visualization&lt;/a&gt;. However, the real question is if a Google search for “data science blog” returns nearsly half a BILLION results&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, why should &lt;strong&gt;&lt;em&gt;I&lt;/em&gt;&lt;/strong&gt; create one?&lt;/p&gt;
 
 &lt;p&gt;Surely any opinion piece I write will have been written better by someone more qualified, right?&lt;/p&gt;
 
-&lt;p&gt;As for coding tutorials,&lt;/p&gt;
+&lt;p&gt;As for coding tutorials, again, won’t everything I create have already been done by someone with a PhD in computer science&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;?&lt;/p&gt;
 
-&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;While the answer to both of the questions above is more likely than not &lt;strong&gt;“yes”&lt;/strong&gt;, it doesn’t detract from the actual aim of this enterprise which is to provide a space for me to solidify my understanding of data science/ machine learning. How?&lt;/p&gt;
 
+&lt;h2 id=&quot;standing-on-the-shoulders-of-giants&quot;&gt;Standing on the Shoulders of Giants&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://en.wikipedia.org/wiki/Richard_Feynman#/media/File:Richard_Feynman_Nobel.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h3&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;Google search May 14th, 2020 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;That is an idea for a future project, “What is the ratio of data science coding tutorials written by holders of PhDs compared to non-PhDs?” &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Why write another blog?</summary></entry><entry><title type="html">R is for Resources</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html" rel="alternate" type="text/html" title="R is for Resources" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html">&lt;h2 id=&quot;basic-setup&quot;&gt;Basic setup&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Why another blog?</summary></entry><entry><title type="html">R is for Resources</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html" rel="alternate" type="text/html" title="R is for Resources" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html">&lt;h2 id=&quot;basic-setup&quot;&gt;Basic setup&lt;/h2&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
