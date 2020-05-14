@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This is where you put the contents of your About page. Like all your pages, it’s in Markdown format. . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": ". I started coding in Python at the age of 35 while in graduate school (thanks Sowmya)!. Since then, I have learned the unbridled joy of using R for creating maps and attending a data science bootcamp in Berlin. . When I’m not working, I can be found on the mats doing Brazilian jiu-jitsu (BJJ), doing yoga, or reading sci-fi. .",
           "url": "https://educatorsrlearners.github.io/an-a-z-of-machine-learning/about/",
           "relUrl": "/about/",
           "date": ""
