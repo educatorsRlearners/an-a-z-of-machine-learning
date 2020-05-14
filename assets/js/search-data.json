@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": ". I started coding in Python at the age of 35 while in graduate school (thanks Sowmya). Since then, I have learned the unbridled joy of using R for creating maps and attending a data science bootcamp in Berlin. . When I’m not working, I can be found on the mats doing Brazilian jiu-jitsu (BJJ), doing yoga, or reading sci-fi. .",
+          "content": ". I started coding in Python at the age of 35 while in graduate school (thanks Sowmya). Since then, I have learned the unbridled joy of using R for creating maps and attended a data science bootcamp in Berlin. . When I’m not working, I can be found on the mats doing Brazilian jiu-jitsu (BJJ), doing yoga, or reading sci-fi. .",
           "url": "https://educatorsrlearners.github.io/an-a-z-of-machine-learning/about/",
           "relUrl": "/about/",
           "date": ""
