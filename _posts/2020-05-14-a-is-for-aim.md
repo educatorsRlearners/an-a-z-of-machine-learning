@@ -22,7 +22,7 @@ While the answer to both of the questions above is more likely than not **"yes"*
 
 ## Standing on the Shoulders of Giants
 
-![](images/Richard_Feynman_Nobel.jpg credit"https://en.wikipedia.org/wiki/Richard_Feynman") 
+![]({{ site.baseurl }}images/Richard_Feynman_Nobel.jpg credit"https://en.wikipedia.org/wiki/Richard_Feynman") 
 
 People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynam famous for his work on quantom mechanics but especially to Americans of my generation for his explanation of the [Challenger disaster](https://youtu.be/raMmRKGkGD4?t=38).
 
