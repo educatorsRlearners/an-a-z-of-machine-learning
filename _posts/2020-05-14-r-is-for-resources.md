@@ -3,9 +3,9 @@ toc: true
 layout: post
 description: Purpose behind starting another machine learning blog.
 categories: [motivation]
-sticky_rank: 2
+sticky_rank: 1
 hide: false
-title: A is for AIM
+title: R is for Resources
 ---
 
 ## Basic setup
