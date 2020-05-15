@@ -18,19 +18,36 @@ Surely any opinion piece I write will have been written better by someone more q
 
 As for coding tutorials, again, won't everything I create have already been done by someone with a PhD in computer science[^2]?  
 
-While the answer to both of the questions above is more likely than not **"yes"**, it doesn't detract from the actual aim of this enterprise which is to provide a space for me to solidify my understanding of data science/ machine learning. How? 
+While the answer to both of the questions above is more likely than not **"yes"**, it doesn't detract from the actual aim of this enterprise which is to provide a space for me to solidify my understanding of data science/ machine learning. 
 
-## Standing on the Shoulders of Giants
+*How?* 
+
+By writing about what I have learned, I will identity the areas where I am weak while solidifying the areas where I'm proficient. 
+
+Why do I think it will work? Because some of the greatest thinkers of the 20th century used the process of writing about their field to 
+
+## Standing on the Shoulders of Giants 
+
+### Science and Engineering
 
 ![]({{ site.baseurl }}/images/Richard_Feynman_Nobel.jpg)
 
-People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynam famous for his work on quantom mechanics but especially to Americans of my generation for his explanation of the [Challenger disaster](https://youtu.be/raMmRKGkGD4?t=38).
+People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynmam. While he is famous for his work on quantum mechanics, [his explanation of the *Challenger* disaster](https://youtu.be/raMmRKGkGD4?t=38) will forever be seared in my mind.
 
 Why do I mention him? Feynman's ["notebook technique"](https://www.youtube.com/watch?v=GD-_fcpylcE) is a model for learning anything:   
 1. Write down the concept you wish to master
 2. Explain the concept in comprehensible language
 3. Revise ides/concepts which you can't explain well enough
 4. Identify complex areas and think of how to simplify them further (i.e., create analogies)
+
+
+
+### Humanities
+
+![]({{ site.baseurl }}/images/zinsser.png)
+
+
+
 
 
 ### Footnotes
