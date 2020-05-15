@@ -35,18 +35,21 @@ People who studied in the colleges of science and engineering are usually famili
 Why do I mention him? Feynman's ["notebook technique"](https://www.youtube.com/watch?v=GD-_fcpylcE) is a model for learning anything:   
 1. Write down the concept you wish to master
 2. Explain the concept in comprehensible language
-3. Revise ideas/concepts which you can't explain well enough
+3. Revise ideas/concepts which you can't explain to a high standard
 4. Identify complex areas and think of how to simplify them further (i.e., create analogies)
 
-Or, to quote [William Zinsser](http://www.williamzinsserwriter.com/index.html), one of the true champions of teaching writing, who mused in [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405) that he had realized "[w]riting and thinking and learning were the same process."
+Or, to quote of the the true champions of teaching writing [William Zinsser](http://www.williamzinsserwriter.com/index.html), "[w]riting and thinking and learning were the same process" and "Clear writing is the logical arrangement of thought; a scientist who thinks clearly can write as well as the best writer."[^3]
 
-Or, to put it yet another way, we can cite a quote attributed to [John Dewey](https://en.wikipedia.org/wiki/John_Dewey#External_links),"We do not learn from experience [...] but from reflecting on an experience."[^3]: 
+Or, to put it yet another way, we can cite a quote attributed to [John Dewey](https://en.wikipedia.org/wiki/John_Dewey#External_links),"We do not learn from experience [...] but from reflecting on an experience."[^4] 
 
-Or, in my own words, I am writing this blog to identify and shift concepts, ideas, and practices from the "Don't Know" into the "Do Know". Consequently, there will be nothing original on this blog because, as Zinsser so eloquently put it, "writing is learned mainly by imitation."[^4]  
+Or, in my own words, I am writing this blog to identify and shift concepts, ideas, and practices from the "Don't Know" column into the "Do Know".
+
+Consequently, nothing original will be found on this blog because my purpose isn't to propose some novel statistical technique nor propose a new theory; my aim is far humbler: improve my own understanding of machine learning. 
 
 
 ### Footnotes
 [^1]: Google search May 14th, 2020  
-[^2]: That is an idea for a future project, "What is the ratio of data science coding tutorials written by holders of PhDs compared to non-PhDs?"  
-[^3]: This quote is most likely an [amalgamation of several ideas which Dewey professed](https://www.quora.com/What-is-the-source-of-this-famous-quote-attributed-to-John-Dewey-We-do-not-learn-from-an-experience-We-learn-from-reflecting-on-an-experience), but I still like it :)  
-[^4]: Preface to [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405)
+[^2]: That is an idea for a future project, "What is the ratio of data science coding tutorials written by holders of PhDs compared to non-PhDs?"   
+[^3]: From the "Preface" to [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405)  
+[^4]: This quote is most likely an [amalgamation](https://www.quora.com/What-is-the-source-of-this-famous-quote-attributed-to-John-Dewey-We-do-not-learn-from-an-experience-We-learn-from-reflecting-on-an-experience) of several ideas which Dewey professed, but I still like it :)  
+[^5]: From the "Preface" to [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405)
