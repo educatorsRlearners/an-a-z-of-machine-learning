@@ -7,6 +7,16 @@ sticky_rank: 1
 hide: false
 title: A is for Aim
 ---
+### ***TLDR:***
+
+#### This blog is ***NOT***: 
+
+- a collection of answers to [Udemy's Machine Learning Course](https://www.udemy.com/course/machinelearning/)  
+
+#### What this blog is: 
+
+- a space for me to refine my thinking on machine learning principles and practices  
+- an homage to [*An A-Z of ELT*](https://scottthornbury.wordpress.com/) by Scott Thornbury  
 
 ## ***Why another blog?***
 
@@ -26,7 +36,7 @@ By writing about what I have learned, I will identity the areas where I am weak 
 
 But why do I think it will work? 
 
-## Standing on the Shoulders of Giants 
+## ***Standing on the Shoulders of Giants*** 
 
 People who studied in the colleges of science and engineering are usually familiar [Dr. Richard Feynmam](https://en.wikipedia.org/wiki/Richard_Feynman). While he is famous for his work on quantum mechanics, his explanation of the *Challenger* disaster will forever be seared in my mind.
 
@@ -46,6 +56,15 @@ Or, in my own words, I am writing this blog to identify and shift concepts, idea
 
 Consequently, nothing original will be found on this blog because my purpose isn't to discover some novel statistical technique nor propose a new theory; my aim is far humbler: increase my understanding of machine learning by clarifying my thinking through the process of writing. Shouldn't be that hard, right :smirk:  
 
+## ***But why the name?***
+
+A little more than a decade ago when I was an English language teacher (ELT) in Hanoi, Vietnam, I was introduced to the work of [Scott Thornbury](http://www.scottthornbury.com/home.html), who is a legend in ELT circles, and whose blog [*An A-Z of ELT*](https://scottthornbury.wordpress.com/) was required reading for my colleagues and I.
+
+But why should I use a similar name? 
+
+First, structure: there are 26 letters in the English alphabet meaning, at the minimum, I'm compelled to write 26 entries. How long will that take? That's a good question that I'm not even going to attempt to answer. 
+
+Second, I just like the name and, honestly, what more reason do I need? :laughing:  
 
 ### Footnotes
 [^1]: Google search May 14th, 2020  
