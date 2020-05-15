@@ -24,7 +24,7 @@ While the answer to both of the questions above is more likely than not **"yes"*
 
 By writing about what I have learned, I will identity the areas where I am weak while solidifying the areas where I'm proficient. 
 
-Why do I think it will work? Because some of the greatest thinkers of the 20th century used the process of writing about their field to 
+But why do I think it will work? 
 
 ## Standing on the Shoulders of Giants 
 
@@ -40,7 +40,7 @@ Why do I mention him? Feynman's ["notebook technique"](https://www.youtube.com/w
 
 Or, to quote one of the true champions of teaching writing [William Zinsser](http://www.williamzinsserwriter.com/index.html), "[w]riting and thinking and learning were the same process" and "Clear writing is the logical arrangement of thought; a scientist who thinks clearly can write as well as the best writer."[^3]
 
-Or, to put it yet another way, we can cite a quote attributed to [John Dewey](https://en.wikipedia.org/wiki/John_Dewey#External_links),"We do not learn from experience [...] but from reflecting on an experience."[^4] 
+Or, to put it yet another way, we can cite a quote attributed to [John Dewey](https://en.wikipedia.org/wiki/John_Dewey#External_links), "We do not learn from experience [...] but from reflecting on an experience."[^4] 
 
 Or, in my own words, I am writing this blog to identify and shift concepts, ideas, and practices from the "Don't Know" column into the "Do Know".
 
