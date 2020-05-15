@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-15T13:22:35-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for Aim</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for Aim" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html">&lt;h2 id=&quot;why-another-blog&quot;&gt;&lt;strong&gt;&lt;em&gt;Why another blog?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-15T14:06:10-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for Aim</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for Aim" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html">&lt;h3 id=&quot;tldr&quot;&gt;&lt;strong&gt;&lt;em&gt;TLDR:&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;this-blog-is-not&quot;&gt;This blog is &lt;strong&gt;&lt;em&gt;NOT&lt;/em&gt;&lt;/strong&gt;:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a collection of answers to &lt;a href=&quot;https://www.udemy.com/course/machinelearning/&quot;&gt;Udemy’s Machine Learning Course&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;what-this-blog-is&quot;&gt;What this blog is:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a space for me to refine my thinking on machine learning principles and practices&lt;/li&gt;
+  &lt;li&gt;an homage to &lt;a href=&quot;https://scottthornbury.wordpress.com/&quot;&gt;&lt;em&gt;An A-Z of ELT&lt;/em&gt;&lt;/a&gt; by Scott Thornbury&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-another-blog&quot;&gt;&lt;strong&gt;&lt;em&gt;Why another blog?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;Good question.&lt;/p&gt;
 
@@ -16,7 +31,7 @@
 
 &lt;p&gt;But why do I think it will work?&lt;/p&gt;
 
-&lt;h2 id=&quot;standing-on-the-shoulders-of-giants&quot;&gt;Standing on the Shoulders of Giants&lt;/h2&gt;
+&lt;h2 id=&quot;standing-on-the-shoulders-of-giants&quot;&gt;&lt;strong&gt;&lt;em&gt;Standing on the Shoulders of Giants&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;People who studied in the colleges of science and engineering are usually familiar &lt;a href=&quot;https://en.wikipedia.org/wiki/Richard_Feynman&quot;&gt;Dr. Richard Feynmam&lt;/a&gt;. While he is famous for his work on quantum mechanics, his explanation of the &lt;em&gt;Challenger&lt;/em&gt; disaster will forever be seared in my mind.&lt;/p&gt;
 
@@ -38,6 +53,16 @@
 
 &lt;p&gt;Consequently, nothing original will be found on this blog because my purpose isn’t to discover some novel statistical technique nor propose a new theory; my aim is far humbler: increase my understanding of machine learning by clarifying my thinking through the process of writing. Shouldn’t be that hard, right :smirk:&lt;/p&gt;
 
+&lt;h2 id=&quot;but-why-the-name&quot;&gt;&lt;strong&gt;&lt;em&gt;But why the name?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;A little more than a decade ago when I was an English language teacher (ELT) in Hanoi, Vietnam, I was introduced to the work of &lt;a href=&quot;http://www.scottthornbury.com/home.html&quot;&gt;Scott Thornbury&lt;/a&gt;, who is a legend in ELT circles, and whose blog &lt;a href=&quot;https://scottthornbury.wordpress.com/&quot;&gt;&lt;em&gt;An A-Z of ELT&lt;/em&gt;&lt;/a&gt; was required reading for my colleagues and I.&lt;/p&gt;
+
+&lt;p&gt;But why should I use a similar name?&lt;/p&gt;
+
+&lt;p&gt;First, structure: there are 26 letters in the English alphabet meaning, at the minimum, I’m compelled to write 26 entries. How long will that take? That’s a good question that I’m not even going to attempt to answer.&lt;/p&gt;
+
+&lt;p&gt;Second, I just like the name and, honestly, what more reason do I need? :laughing:&lt;/p&gt;
+
 &lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h3&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -54,7 +79,7 @@
       &lt;p&gt;This quote is most likely an &lt;a href=&quot;https://www.quora.com/What-is-the-source-of-this-famous-quote-attributed-to-John-Dewey-We-do-not-learn-from-an-experience-We-learn-from-reflecting-on-an-experience&quot;&gt;amalgamation&lt;/a&gt; of several ideas which Dewey professed, but I still like it :smiley: &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Why another blog?</summary></entry><entry><title type="html">R is for Resources</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html" rel="alternate" type="text/html" title="R is for Resources" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html">&lt;h2 id=&quot;basic-setup&quot;&gt;Basic setup&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">TLDR:</summary></entry><entry><title type="html">R is for Resources</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html" rel="alternate" type="text/html" title="R is for Resources" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html">&lt;h2 id=&quot;basic-setup&quot;&gt;Basic setup&lt;/h2&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
