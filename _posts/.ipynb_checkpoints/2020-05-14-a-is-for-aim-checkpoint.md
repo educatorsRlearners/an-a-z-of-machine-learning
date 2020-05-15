@@ -28,30 +28,25 @@ Why do I think it will work? Because some of the greatest thinkers of the 20th c
 
 ## Standing on the Shoulders of Giants 
 
-### Science and Engineering
-
-![]({{ site.baseurl }}/images/Richard_Feynman_Nobel.jpg)
-
-People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynmam. While he is famous for his work on quantum mechanics, his explanation of the *Challenger* disaster will forever be seared in my mind.
+People who studied in the colleges of science and engineering are usually familiar [Dr. Richard Feynmam](https://en.wikipedia.org/wiki/Richard_Feynman). While he is famous for his work on quantum mechanics, his explanation of the *Challenger* disaster will forever be seared in my mind.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZOzoLdfWyKw?start=114" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Why do I mention him? Feynman's ["notebook technique"](https://www.youtube.com/watch?v=GD-_fcpylcE) is a model for learning anything:   
 1. Write down the concept you wish to master
 2. Explain the concept in comprehensible language
-3. Revise ides/concepts which you can't explain well enough
+3. Revise ideas/concepts which you can't explain well enough
 4. Identify complex areas and think of how to simplify them further (i.e., create analogies)
 
+Or, to quote [William Zinsser](http://www.williamzinsserwriter.com/index.html), one of the true champions of teaching writing, who mused in [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405) that he had realized "[w]riting and thinking and learning were the same process."
 
+Or, to put it yet another way, we can cite a quote attributed to [John Dewey](https://en.wikipedia.org/wiki/John_Dewey#External_links),"We do not learn from experience [...] but from reflecting on an experience."[^3]: 
 
-### Humanities
+Or, in my own words, I am writing this blog to identify and shift concepts, ideas, and practices from the "Don't Know" into the "Do Know". Consequently, there will be nothing original on this blog because, as Zinsser so eloquently put it, "writing is learned mainly by imitation."[^4]  
 
-![]({{ site.baseurl }}/images/zinsser.png)
-
-
-
-### Education
 
 ### Footnotes
 [^1]: Google search May 14th, 2020  
-[^2]: That is an idea for a future project, "What is the ratio of data science coding tutorials written by holders of PhDs compared to non-PhDs?"
+[^2]: That is an idea for a future project, "What is the ratio of data science coding tutorials written by holders of PhDs compared to non-PhDs?"  
+[^3]: This quote is most likely an [amalgamation of several ideas which Dewey professed](https://www.quora.com/What-is-the-source-of-this-famous-quote-attributed-to-John-Dewey-We-do-not-learn-from-an-experience-We-learn-from-reflecting-on-an-experience), but I still like it :)  
+[^4]: Preface to [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405)
