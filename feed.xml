@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-14T17:49:27-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for Aim</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for Aim" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html">&lt;h2 id=&quot;why-another-blog&quot;&gt;&lt;strong&gt;&lt;em&gt;Why another blog?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-15T05:59:03-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for Aim</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for Aim" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html">&lt;h2 id=&quot;why-another-blog&quot;&gt;&lt;strong&gt;&lt;em&gt;Why another blog?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;Good question.&lt;/p&gt;
 
@@ -8,13 +8,25 @@
 
 &lt;p&gt;As for coding tutorials, again, won’t everything I create have already been done by someone with a PhD in computer science&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;?&lt;/p&gt;
 
-&lt;p&gt;While the answer to both of the questions above is more likely than not &lt;strong&gt;“yes”&lt;/strong&gt;, it doesn’t detract from the actual aim of this enterprise which is to provide a space for me to solidify my understanding of data science/ machine learning. How?&lt;/p&gt;
+&lt;p&gt;While the answer to both of the questions above is more likely than not &lt;strong&gt;“yes”&lt;/strong&gt;, it doesn’t detract from the actual aim of this enterprise which is to provide a space for me to solidify my understanding of data science/ machine learning.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;How?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;By writing about what I have learned, I will identity the areas where I am weak while solidifying the areas where I’m proficient.&lt;/p&gt;
+
+&lt;p&gt;Why do I think it will work? Because some of the greatest thinkers of the 20th century used the process of writing about their field to&lt;/p&gt;
 
 &lt;h2 id=&quot;standing-on-the-shoulders-of-giants&quot;&gt;Standing on the Shoulders of Giants&lt;/h2&gt;
 
+&lt;h3 id=&quot;science-and-engineering&quot;&gt;Science and Engineering&lt;/h3&gt;
+
 &lt;p&gt;&lt;img src=&quot;/an-a-z-of-machine-learning/images/Richard_Feynman_Nobel.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynam famous for his work on quantom mechanics but especially to Americans of my generation for his explanation of the &lt;a href=&quot;https://youtu.be/raMmRKGkGD4?t=38&quot;&gt;Challenger disaster&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynmam. While he is famous for his work on quantum mechanics, his explanation of the &lt;em&gt;Challenger&lt;/em&gt; disaster will forever be seared in my mind.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;youtube: https://youtu.be/ZOzoLdfWyKw?t=114&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Why do I mention him? Feynman’s &lt;a href=&quot;https://www.youtube.com/watch?v=GD-_fcpylcE&quot;&gt;“notebook technique”&lt;/a&gt; is a model for learning anything:&lt;/p&gt;
 &lt;ol&gt;
@@ -23,6 +35,12 @@
   &lt;li&gt;Revise ides/concepts which you can’t explain well enough&lt;/li&gt;
   &lt;li&gt;Identify complex areas and think of how to simplify them further (i.e., create analogies)&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;h3 id=&quot;humanities&quot;&gt;Humanities&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/an-a-z-of-machine-learning/images/zinsser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;education&quot;&gt;Education&lt;/h3&gt;
 
 &lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h3&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
