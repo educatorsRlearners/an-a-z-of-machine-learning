@@ -4,7 +4,7 @@ layout: post
 description: Purpose behind starting another machine learning blog.
 categories: [opinion]
 sticky_rank: 1
-hide: true
+hide: false
 title: A is for Aim
 ---
 
