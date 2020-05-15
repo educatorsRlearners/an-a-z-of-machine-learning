@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-15T06:09:51-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for Aim</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for Aim" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html">&lt;h2 id=&quot;why-another-blog&quot;&gt;&lt;strong&gt;&lt;em&gt;Why another blog?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" rel="self" type="application/atom+xml" /><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/" rel="alternate" type="text/html" /><updated>2020-05-15T10:12:03-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml</id><title type="html">An A to Z of Machine Learning</title><subtitle>A place for refining my thinking and understanding of machine learning.</subtitle><entry><title type="html">A is for Aim</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html" rel="alternate" type="text/html" title="A is for Aim" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/opinion/2020/05/14/a-is-for-aim.html">&lt;h2 id=&quot;why-another-blog&quot;&gt;&lt;strong&gt;&lt;em&gt;Why another blog?&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;Good question.&lt;/p&gt;
 
@@ -18,11 +18,7 @@
 
 &lt;h2 id=&quot;standing-on-the-shoulders-of-giants&quot;&gt;Standing on the Shoulders of Giants&lt;/h2&gt;
 
-&lt;h3 id=&quot;science-and-engineering&quot;&gt;Science and Engineering&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/an-a-z-of-machine-learning/images/Richard_Feynman_Nobel.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynmam. While he is famous for his work on quantum mechanics, his explanation of the &lt;em&gt;Challenger&lt;/em&gt; disaster will forever be seared in my mind.&lt;/p&gt;
+&lt;p&gt;People who studied in the colleges of science and engineering are usually familiar &lt;a href=&quot;https://en.wikipedia.org/wiki/Richard_Feynman&quot;&gt;Dr. Richard Feynmam&lt;/a&gt;. While he is famous for his work on quantum mechanics, his explanation of the &lt;em&gt;Challenger&lt;/em&gt; disaster will forever be seared in my mind.&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZOzoLdfWyKw?start=114&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -30,15 +26,15 @@
 &lt;ol&gt;
   &lt;li&gt;Write down the concept you wish to master&lt;/li&gt;
   &lt;li&gt;Explain the concept in comprehensible language&lt;/li&gt;
-  &lt;li&gt;Revise ides/concepts which you can’t explain well enough&lt;/li&gt;
+  &lt;li&gt;Revise ideas/concepts which you can’t explain well enough&lt;/li&gt;
   &lt;li&gt;Identify complex areas and think of how to simplify them further (i.e., create analogies)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;humanities&quot;&gt;Humanities&lt;/h3&gt;
+&lt;p&gt;Or, to quote &lt;a href=&quot;http://www.williamzinsserwriter.com/index.html&quot;&gt;William Zinsser&lt;/a&gt;, one of the true champions of teaching writing, who mused in &lt;a href=&quot;https://bookshop.org/books/writing-to-learn-rc/9780062720405&quot;&gt;&lt;em&gt;Writing to Learn&lt;/em&gt;&lt;/a&gt; that he had realized “[w]riting and thinking and learning were the same process.”&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/an-a-z-of-machine-learning/images/zinsser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Or, to put it yet another way, we can cite a quote attributed to &lt;a href=&quot;https://en.wikipedia.org/wiki/John_Dewey#External_links&quot;&gt;John Dewey&lt;/a&gt;,”We do not learn from experience […] but from reflecting on an experience.”&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
-&lt;h3 id=&quot;education&quot;&gt;Education&lt;/h3&gt;
+&lt;p&gt;Or, in my own words, I am writing this blog to identify and shift concepts, ideas, and practices from the “Don’t Know” into the “Do Know”. Consequently, there will be nothing original on this blog because, as Zinsser so eloquently put it, “writing is learned mainly by imitation.”&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h3&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
@@ -48,6 +44,12 @@
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
       &lt;p&gt;That is an idea for a future project, “What is the ratio of data science coding tutorials written by holders of PhDs compared to non-PhDs?” &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;This quote is most likely an &lt;a href=&quot;https://www.quora.com/What-is-the-source-of-this-famous-quote-attributed-to-John-Dewey-We-do-not-learn-from-an-experience-We-learn-from-reflecting-on-an-experience&quot;&gt;amalgamation of several ideas which Dewey professed&lt;/a&gt;, but I still like it :) &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;Preface to &lt;a href=&quot;https://bookshop.org/books/writing-to-learn-rc/9780062720405&quot;&gt;&lt;em&gt;Writing to Learn&lt;/em&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name></name></author><summary type="html">Why another blog?</summary></entry><entry><title type="html">R is for Resources</title><link href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html" rel="alternate" type="text/html" title="R is for Resources" /><published>2020-05-14T00:00:00-05:00</published><updated>2020-05-14T00:00:00-05:00</updated><id>https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources</id><content type="html" xml:base="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/motivation/2020/05/14/r-is-for-resources.html">&lt;h2 id=&quot;basic-setup&quot;&gt;Basic setup&lt;/h2&gt;
