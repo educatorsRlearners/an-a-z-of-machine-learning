@@ -24,13 +24,17 @@ While the answer to both of the questions above is more likely than not **"yes"*
 
 By writing about what I have learned, I will identity the areas where I am weak while solidifying the areas where I'm proficient. 
 
+Why do I think it will work? Because some of the greatest thinkers of the 20th century used the process of writing about their field to 
+
 ## Standing on the Shoulders of Giants 
 
 ### Science and Engineering
 
 ![]({{ site.baseurl }}/images/Richard_Feynman_Nobel.jpg)
 
-People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynmam. While he is famous for his work on quantum mechanics, [his explanation of the *Challenger* disaster](https://youtu.be/raMmRKGkGD4?t=38) will forever be seared in my mind.
+People who studied in the colleges of science and engineering are usually familiar with the man above: Dr. Richard Feynmam. While he is famous for his work on quantum mechanics, his explanation of the *Challenger* disaster will forever be seared in my mind.
+
+> youtube: https://youtu.be/ZOzoLdfWyKw?t=114
 
 Why do I mention him? Feynman's ["notebook technique"](https://www.youtube.com/watch?v=GD-_fcpylcE) is a model for learning anything:   
 1. Write down the concept you wish to master
@@ -46,7 +50,7 @@ Why do I mention him? Feynman's ["notebook technique"](https://www.youtube.com/w
 
 
 
-
+### Education
 
 ### Footnotes
 [^1]: Google search May 14th, 2020  
