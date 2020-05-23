@@ -4,7 +4,7 @@ layout: post
 description: A brief list of books which I've found useful over the years.
 categories: [opinion]
 sticky_rank: 2
-hide: false
+hide: true
 title: B is for Book
 ---
 While this is not exhaustive list of the books I've read, it is what I consider my essential reading. Enjoy! 
