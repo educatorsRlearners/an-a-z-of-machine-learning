@@ -26,6 +26,7 @@ Similiar to the title above, but this book has a plot that runs through it so, i
 ## R
 
 ### [R for Data Science](https://r4ds.had.co.nz/)
-![](an-a-z-of-machine-learning/images/r4ds.png 'help')
+![]({{ site.baseurl }}images/r4ds.png "Picture")
+
 
 
