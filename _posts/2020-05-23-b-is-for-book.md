@@ -4,10 +4,10 @@ layout: post
 description: A brief list of books which I've found useful over the years.
 categories: [opinion]
 sticky_rank: 2
-hide: true
+hide: false
 title: B is for Book
 ---
-
+While this is not exhaustive list of the books I've read, it is what I consider my essential reading. Enjoy! 
 
 # Statistics
 ### [The Cartoon Guide to Statistics](http://www.larrygonick.com/titles/science/the-cartoon-guide-to-statistics/)
@@ -58,3 +58,7 @@ If "a picture is worth a thousand words," we should make sure it's conveying our
 ### [Weapons of Math Destruction](https://bookshop.org/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy/9780553418835)
 ![](../images/books/resized008.png)  
 It's good to be reminded that models are never neutral. 
+
+### [An Illustrated Book of Bad Arguments](https://bookshop.org/books/an-illustrated-book-of-bad-arguments-9781615192250/9781615192250)
+![](../images/books/resized010.png)  
+Usually, people don't want to think or act in a biased nature. However, if you're not aware that that a bias/fallacy exists, can you actively avoid it? Therefore, step one of avoiding cognitive biases is to know they exist meaning read this book! 
