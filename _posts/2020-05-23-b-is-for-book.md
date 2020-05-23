@@ -24,7 +24,7 @@ Similar to the title above, but this book has a plot that runs through it so, if
 ## R
 
 ### [R for Data Science](https://r4ds.had.co.nz/)  
-![](https://github.com/educatorsRlearners/an-a-z-of-machine-learning/blob/master/images/books/resized005.png)  
+![](images/books/resized005.png)  
 After completing several [DataCamp](https://www.datacamp.com/profile/pevansimpson) courses, I started using R to analyze [test-taker data](https://educators-r-learners.netlify.app/post/coloring-under-the-lines-in-ggplot/) and this book was my go to reference for the [tidyverse](https://www.tidyverse.org/).
 
 ### [Geocomputation in R](https://geocompr.robinlovelace.net/)
