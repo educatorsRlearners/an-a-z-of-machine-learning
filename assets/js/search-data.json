@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "C is for Classification",
-            "content": "",
+            "content": "TLDR: . Classification, along with regression is one of two types of supervised machine learning tasks. . Regression tasks predict a continuous value | Classification tasks predict either a binary or categorical value. | . Further Reading . Regression Versus Classification Machine Learning: What’s the Difference? .",
             "url": "https://educatorsrlearners.github.io/an-a-z-of-machine-learning/resources/2020/05/24/c-is-for-classification.html",
             "relUrl": "/resources/2020/05/24/c-is-for-classification.html",
             "date": " • May 24, 2020"
