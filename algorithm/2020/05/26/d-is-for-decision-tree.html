@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>D is for Decision Tree | An A to Z of Machine Learning</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="D is for Decision Tree" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What is classification and why is it used?" />
+<meta property="og:description" content="What is classification and why is it used?" />
+<link rel="canonical" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html" />
+<meta property="og:url" content="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html" />
+<meta property="og:site_name" content="An A to Z of Machine Learning" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-26T00:00:00-05:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html"},"description":"What is classification and why is it used?","@type":"BlogPosting","url":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html","headline":"D is for Decision Tree","dateModified":"2020-05-26T00:00:00-05:00","datePublished":"2020-05-26T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/an-a-z-of-machine-learning/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" title="An A to Z of Machine Learning" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-49863069-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/an-a-z-of-machine-learning/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>D is for Decision Tree | An A to Z of Machine Learning</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="D is for Decision Tree" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What is classification and why is it used?" />
+<meta property="og:description" content="What is classification and why is it used?" />
+<link rel="canonical" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html" />
+<meta property="og:url" content="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html" />
+<meta property="og:site_name" content="An A to Z of Machine Learning" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-26T00:00:00-05:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html"},"description":"What is classification and why is it used?","@type":"BlogPosting","url":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html","headline":"D is for Decision Tree","dateModified":"2020-05-26T00:00:00-05:00","datePublished":"2020-05-26T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" title="An A to Z of Machine Learning" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-49863069-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/an-a-z-of-machine-learning/">An A to Z of Machine Learning</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/an-a-z-of-machine-learning/about/">About Me</a><a class="page-link" href="/an-a-z-of-machine-learning/search/">Search</a><a class="page-link" href="/an-a-z-of-machine-learning/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">D is for Decision Tree</h1><p class="page-description">What is classification and why is it used?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-26T00:00:00-05:00" itemprop="datePublished">
+        May 26, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/an-a-z-of-machine-learning/categories/#algorithm">algorithm</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/educatorsRlearners/an-a-z-of-machine-learning/tree/master/_notebooks/2020-05-26-d-is-for-decision-tree.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/an-a-z-of-machine-learning/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/educatorsRlearners/an-a-z-of-machine-learning/master?filepath=_notebooks%2F2020-05-26-d-is-for-decision-tree.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/an-a-z-of-machine-learning/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/educatorsRlearners/an-a-z-of-machine-learning/blob/master/_notebooks/2020-05-26-d-is-for-decision-tree.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/an-a-z-of-machine-learning/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-05-26-d-is-for-decision-tree.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-is-a-Decision-Tree?"><em>What is a <strong>Decision Tree</strong>?</em><a class="anchor-link" href="#What-is-a-Decision-Tree?"> </a></h2><p><strong>Decision Trees</strong> are a type of algorithm used for either classification or regression tasks.</p>
+<h2 id="How-do-they-work?"><em>How do they work?</em><a class="anchor-link" href="#How-do-they-work?"> </a></h2><p>While the math is <a href="https://heartbeat.fritz.ai/understanding-the-mathematics-behind-decision-trees-22d86d55906">fairly complicated</a>, the concept is incredibly straightforward:</p>
+<ol>
+<li>start with all observations in one group</li>
+<li>identify a binary question, i.e., ("<em>yes/no</em>", "<em>over/under</em>") which will lead to mostly homogeneous groups</li>
+<li>repeat step two until every subgroup homogeneous or some other metric has been achieved</li>
+</ol>
+<h2 id="What-are-the-advantages?">What are the advantages?<a class="anchor-link" href="#What-are-the-advantages?"> </a></h2><p><strong>Transparency</strong>: They are considered a <a href="https://en.wikipedia.org/wiki/Decision_tree_learning"><em>white/glass box</em></a> algorithm because you can see what decisions the algorithm made which leads to,</p>
+<p><strong>Interpretablity</strong>: Again, since you can see which decisions were made, it's easy to comprehend and explain.</p>
+<p><strong>Ease</strong>: Data trees <strong>DO NOT</strong> require feature scaling or normalization<sup id="fnref-1" class="footnote-ref"><a href="#fn-1">1</a></sup>.</p>
+<h2 id="What-are-the-advantages?">What are the advantages?<a class="anchor-link" href="#What-are-the-advantages?"> </a></h2><p><strong>Overfitting</strong>: Since they try to find the purest groups, they have a tendacy to overfit.</p>
+<p><strong>Non-Linear Data</strong>: Decision trees attempt to distill a group into it's smallest constituent groups through answe</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Further-Reading">Further Reading<a class="anchor-link" href="#Further-Reading"> </a></h3><p><a href="https://heartbeat.fritz.ai/understanding-the-mathematics-behind-decision-trees-22d86d55906">Understanding the Mathematics Behind Decision Trees</a><br />
+<a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781491962282/">Chapter 6: Decision Trees in <em>Hands-On Machine Learning with Scikit-Learn and TensorFlow</em></a></p>
+<h3 id="References-and-Footnotes">References and Footnotes<a class="anchor-link" href="#References-and-Footnotes"> </a></h3><p><div class="footnotes"><p id="fn-1">1. Geron, 2019, Page 177<a href="#fnref-1" class="footnote footnotes">↩</a></p></div></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="educatorsRlearners/an-a-z-of-machine-learning"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/an-a-z-of-machine-learning/algorithm/2020/05/26/d-is-for-decision-tree.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/an-a-z-of-machine-learning/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/an-a-z-of-machine-learning/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/an-a-z-of-machine-learning/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A place for refining my thinking and understanding of machine learning.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/educatorsrlearners" title="educatorsrlearners"><svg class="svg-icon grey"><use xlink:href="/an-a-z-of-machine-learning/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/evansimpson1" title="evansimpson1"><svg class="svg-icon grey"><use xlink:href="/an-a-z-of-machine-learning/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/pevansimpson" title="pevansimpson"><svg class="svg-icon grey"><use xlink:href="/an-a-z-of-machine-learning/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
