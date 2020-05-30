@@ -103,7 +103,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -171,8 +171,9 @@ window.onload = wrap_img;
 <p><strong>Ease</strong>: Data trees <strong>DO NOT</strong> require feature scaling or normalization<sup id="fnref-1" class="footnote-ref"><a href="#fn-1">1</a></sup>.</p>
 <h2 id="What-are-the-disadvantages?">What are the disadvantages?<a class="anchor-link" href="#What-are-the-disadvantages?"> </a></h2><p><strong>Overfitting</strong>: Since they try to find the purest groups, they have a tendacy to overfit.</p>
 <p><strong>Non-Linear Data</strong>: Relationships in the data between features are not considered.</p>
-<h2 id="How-do-we-train-a-decision-tree?">How do we train a decision tree?<a class="anchor-link" href="#How-do-we-train-a-decision-tree?"> </a></h2><h3 id="Step-1:-Collect/Load-our-Data">Step 1: Collect/Load our Data<a class="anchor-link" href="#Step-1:-Collect/Load-our-Data"> </a></h3><p>We'll be using the <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris dataset</a> compliments of sklearn.</p>
-
+<h2 id="How-do-we-train-a-decision-tree?">How do we train a decision tree?<a class="anchor-link" href="#How-do-we-train-a-decision-tree?"> </a></h2><h3 id="Step-0:-Frame-the-Problem">Step 0: Frame the Problem<a class="anchor-link" href="#Step-0:-Frame-the-Problem"> </a></h3><p><em>Do smokers tip more than non-smokers?</em></p>
+<p>I know that's a pretty random question, but while perusing the <a href="https://github.com/mwaskom/seaborn-data">Seaborn</a> data page, I saw the <code>tips</code> dataset and couldn't help myself.</p>
+<h3 id="Step-1:-Collect/Load-our-Data">Step 1: Collect/Load our Data<a class="anchor-link" href="#Step-1:-Collect/Load-our-Data"> </a></h3>
 </div>
 </div>
 </div>
@@ -183,11 +184,9 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-
-<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -211,8 +210,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tips</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -224,12 +222,23 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 244 entries, 0 to 243
+Data columns (total 7 columns):
+ #   Column      Non-Null Count  Dtype   
+---  ------      --------------  -----   
+ 0   total_bill  244 non-null    float64 
+ 1   tip         244 non-null    float64 
+ 2   sex         244 non-null    category
+ 3   smoker      244 non-null    category
+ 4   day         244 non-null    category
+ 5   time        244 non-null    category
+ 6   size        244 non-null    int64   
+dtypes: category(4), float64(2), int64(1)
+memory usage: 7.3 KB
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -238,6 +247,13 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Good news! No missing values but, we're going to need to relabel those categorical variables for our decision tree.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Step-2-(Cont.):-Visualize-the-Data">Step 2 (Cont.): Visualize the Data<a class="anchor-link" href="#Step-2-(Cont.):-Visualize-the-Data"> </a></h3><p>Let's see what our features are called:</p>
