@@ -13,7 +13,7 @@ title: A is for Aim
 
 - a collection of answers to [Udemy's Machine Learning Course](https://www.udemy.com/course/machinelearning/)  
 
-#### What this blog is: 
+#### This blog is: 
 
 - a space for me to refine my thinking on machine learning principles and practices  
 - an homage to [*An A-Z of ELT*](https://scottthornbury.wordpress.com/) by Scott Thornbury  
