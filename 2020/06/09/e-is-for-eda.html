@@ -109,7 +109,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -197,9 +197,12 @@ window.onload = wrap_img;
 <p>"Given a set of features, can we determine how old someone needs to be to read a book?"</p>
 <h3 id="Step-2:-Get-the-Data">Step 2: Get the Data<a class="anchor-link" href="#Step-2:-Get-the-Data"> </a>
 </h3>
-<p>To answer the question above, I scraped <a href="https://www.commonsensemedia.org/book-reviews">Common Sense Media's Book Reviews</a> and the code can be found <a href="https://github.com/educatorsRlearners/book-maturity/blob/master/00_get_search_pages.ipynb">here</a>.</p>
+<p>To answer the question above, I sourced labeled data by scraping <a href="https://www.commonsensemedia.org/book-reviews">Common Sense Media's Book Reviews</a> using <code>BeautifulSoup</code> and then wrote the data to a csv.<sup id="fnref-1" class="footnote-ref"><a href="#fn-1">1</a></sup></p>
+<p><img src="/an-a-z-of-machine-learning/images/copied_from_nb/../images/e-is-for-eda/csm2.png" alt="" title="Credit: https://www.commonsensemedia.org/book-reviews"></p>
 <h3 id="Step-3:-Explore-the-Data-to-Gain-Insights-(i.e.-EDA)">Step 3: Explore the Data to Gain Insights (i.e. EDA)<a class="anchor-link" href="#Step-3:-Explore-the-Data-to-Gain-Insights-(i.e.-EDA)"> </a>
 </h3>
+<p>As always, import the basics, then load the data.</p>
+
 </div>
 </div>
 </div>
@@ -211,23 +214,8 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">'https://raw.githubusercontent.com/educatorsRlearners/book-maturity/master/csv/book_info_complete.csv'</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">'https://raw.githubusercontent.com/educatorsRlearners/book-maturity/master/csv/book_info_complete.csv'</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 </pre></div>
@@ -239,6 +227,17 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Time to start asking and answering some basic questions:</p>
+<ul>
+<li>How much data do we have? </li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -272,6 +271,19 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>OK, so we have 23 features and one target as well as 5,816 observations.</p>
+<p><em>Why do we have fewer than in the screenshot above?</em></p>
+<p>Because Common Sense Media is constantly adding new reviews to their website, meaning they've added nearly 100 books to their site since I completed my project at the end of March 2020.</p>
+<ul>
+<li>What type of data do we have? </li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -325,6 +337,268 @@ dtypes: float64(3), int64(1), object(20)
 memory usage: 1.1+ MB
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Looks like a mix of strings and floats.</p>
+<p><em>Lets look at a sample</em></p>
+<p>Good idea.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>title</th>
+      <td>The Third Twin</td>
+      <td>Small Damages</td>
+      <td>The School for Good and Evil, Book 1</td>
+      <td>Agent of Chaos: The X-Files Origins, Book 1</td>
+      <td>Crossing Ebenezer Creek</td>
+    </tr>
+    <tr>
+      <th>description</th>
+      <td>Gripping thriller skimps on character developm...</td>
+      <td>Luminous story of pregnant teen's summer in Sp...</td>
+      <td>Fractured fairy tale has plenty of twists for ...</td>
+      <td>Series pictures Mulder as teen, captures essen...</td>
+      <td>Heartbreaking novel follows freed slaves on Sh...</td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>Twins Ava and Alexa "Lexi" Rios live in an aff...</td>
+      <td>It's the summer of 1996, which 18-year-old Ken...</td>
+      <td>When best friends Sophie and Agatha are stolen...</td>
+      <td>Set in 1979, AGENT OF CHAOS follows a 17-year-...</td>
+      <td>CROSSING EBENEZER CREEK is a YA novel from awa...</td>
+    </tr>
+    <tr>
+      <th>csm_review</th>
+      <td>THE THIRD TWIN has an interesting, compelling ...</td>
+      <td>This could well have been a minefield of clich...</td>
+      <td>The School for Good and Evil is no run-of-the-...</td>
+      <td>Popular TV characters don't always make a smoo...</td>
+      <td>Beautifully written and poetically rendered, t...</td>
+    </tr>
+    <tr>
+      <th>need_to_know</th>
+      <td>Parents need to know that The Third Twin is a ...</td>
+      <td>Parents need to know that Small Damages is nar...</td>
+      <td>Parents need to know that The School for Good ...</td>
+      <td>Parents need to know that Agent of Chaos: The ...</td>
+      <td>Parents need to know that Crossing Ebenezer Cr...</td>
+    </tr>
+    <tr>
+      <th>par_rating</th>
+      <td>17</td>
+      <td>NaN</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>kids_rating</th>
+      <td>14</td>
+      <td>14</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>csm_rating</th>
+      <td>12</td>
+      <td>14</td>
+      <td>8</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>Author</th>
+      <td>CJ Omololu</td>
+      <td>Beth Kephart</td>
+      <td>Soman Chainani</td>
+      <td>Kami Garcia</td>
+      <td>Tonya Bolden</td>
+    </tr>
+    <tr>
+      <th>Genre</th>
+      <td>Mystery</td>
+      <td>Coming of Age</td>
+      <td>Fairy Tale</td>
+      <td>Science Fiction</td>
+      <td>Historical Fiction</td>
+    </tr>
+    <tr>
+      <th>Topics</th>
+      <td>Adventures, Brothers and Sisters, Friendship, ...</td>
+      <td>Friendship, History, Horses and Farm Animals</td>
+      <td>Magic and Fantasy, Princesses, Fairies, Mermai...</td>
+      <td>Magic and Fantasy, Adventures, Great Boy Role ...</td>
+      <td>Friendship, History</td>
+    </tr>
+    <tr>
+      <th>Book type</th>
+      <td>Fiction</td>
+      <td>Fiction</td>
+      <td>Fiction</td>
+      <td>Fiction</td>
+      <td>Fiction</td>
+    </tr>
+    <tr>
+      <th>Publisher</th>
+      <td>Delacorte Press</td>
+      <td>Philomel</td>
+      <td>HarperCollins Children's Books</td>
+      <td>Imprint</td>
+      <td>Bloomsbury Children's Books</td>
+    </tr>
+    <tr>
+      <th>Publication date</th>
+      <td>February 24, 2015</td>
+      <td>July 19, 2012</td>
+      <td>May 14, 2013</td>
+      <td>January 3, 2017</td>
+      <td>May 30, 2017</td>
+    </tr>
+    <tr>
+      <th>Publisher's recommended age(s)</th>
+      <td>12 - 18</td>
+      <td>14 - 17</td>
+      <td>8 - 17</td>
+      <td>14 - 18</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Number of pages</th>
+      <td>336</td>
+      <td>304</td>
+      <td>496</td>
+      <td>320</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <th>Available on</th>
+      <td>Nook, Hardback, iBooks, Kindle</td>
+      <td>Nook, Hardback, iBooks, Kindle</td>
+      <td>Nook, Audiobook (unabridged), Hardback, iBooks...</td>
+      <td>Nook, Audiobook (abridged), Hardback, iBooks, ...</td>
+      <td>Nook, Audiobook (unabridged), Hardback, Kindle</td>
+    </tr>
+    <tr>
+      <th>Last updated</th>
+      <td>June 19, 2019</td>
+      <td>May 06, 2019</td>
+      <td>October 18, 2017</td>
+      <td>June 19, 2019</td>
+      <td>January 18, 2019</td>
+    </tr>
+    <tr>
+      <th>Illustrator</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Iacopo Bruno</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Authors</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Awards</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Publishers</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Award</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Illustrators</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -520,226 +794,6 @@ memory usage: 1.1+ MB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>title</th>
-      <td>The Third Twin</td>
-      <td>Small Damages</td>
-      <td>The School for Good and Evil, Book 1</td>
-      <td>Agent of Chaos: The X-Files Origins, Book 1</td>
-      <td>Crossing Ebenezer Creek</td>
-    </tr>
-    <tr>
-      <th>description</th>
-      <td>Gripping thriller skimps on character developm...</td>
-      <td>Luminous story of pregnant teen's summer in Sp...</td>
-      <td>Fractured fairy tale has plenty of twists for ...</td>
-      <td>Series pictures Mulder as teen, captures essen...</td>
-      <td>Heartbreaking novel follows freed slaves on Sh...</td>
-    </tr>
-    <tr>
-      <th>plot</th>
-      <td>Twins Ava and Alexa "Lexi" Rios live in an aff...</td>
-      <td>It's the summer of 1996, which 18-year-old Ken...</td>
-      <td>When best friends Sophie and Agatha are stolen...</td>
-      <td>Set in 1979, AGENT OF CHAOS follows a 17-year-...</td>
-      <td>CROSSING EBENEZER CREEK is a YA novel from awa...</td>
-    </tr>
-    <tr>
-      <th>csm_review</th>
-      <td>THE THIRD TWIN has an interesting, compelling ...</td>
-      <td>This could well have been a minefield of clich...</td>
-      <td>The School for Good and Evil is no run-of-the-...</td>
-      <td>Popular TV characters don't always make a smoo...</td>
-      <td>Beautifully written and poetically rendered, t...</td>
-    </tr>
-    <tr>
-      <th>need_to_know</th>
-      <td>Parents need to know that The Third Twin is a ...</td>
-      <td>Parents need to know that Small Damages is nar...</td>
-      <td>Parents need to know that The School for Good ...</td>
-      <td>Parents need to know that Agent of Chaos: The ...</td>
-      <td>Parents need to know that Crossing Ebenezer Cr...</td>
-    </tr>
-    <tr>
-      <th>Author</th>
-      <td>CJ Omololu</td>
-      <td>Beth Kephart</td>
-      <td>Soman Chainani</td>
-      <td>Kami Garcia</td>
-      <td>Tonya Bolden</td>
-    </tr>
-    <tr>
-      <th>Genre</th>
-      <td>Mystery</td>
-      <td>Coming of Age</td>
-      <td>Fairy Tale</td>
-      <td>Science Fiction</td>
-      <td>Historical Fiction</td>
-    </tr>
-    <tr>
-      <th>Topics</th>
-      <td>Adventures, Brothers and Sisters, Friendship, ...</td>
-      <td>Friendship, History, Horses and Farm Animals</td>
-      <td>Magic and Fantasy, Princesses, Fairies, Mermai...</td>
-      <td>Magic and Fantasy, Adventures, Great Boy Role ...</td>
-      <td>Friendship, History</td>
-    </tr>
-    <tr>
-      <th>Book type</th>
-      <td>Fiction</td>
-      <td>Fiction</td>
-      <td>Fiction</td>
-      <td>Fiction</td>
-      <td>Fiction</td>
-    </tr>
-    <tr>
-      <th>Publisher</th>
-      <td>Delacorte Press</td>
-      <td>Philomel</td>
-      <td>HarperCollins Children's Books</td>
-      <td>Imprint</td>
-      <td>Bloomsbury Children's Books</td>
-    </tr>
-    <tr>
-      <th>Publication date</th>
-      <td>February 24, 2015</td>
-      <td>July 19, 2012</td>
-      <td>May 14, 2013</td>
-      <td>January 3, 2017</td>
-      <td>May 30, 2017</td>
-    </tr>
-    <tr>
-      <th>Publisher's recommended age(s)</th>
-      <td>12 - 18</td>
-      <td>14 - 17</td>
-      <td>8 - 17</td>
-      <td>14 - 18</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Available on</th>
-      <td>Nook, Hardback, iBooks, Kindle</td>
-      <td>Nook, Hardback, iBooks, Kindle</td>
-      <td>Nook, Audiobook (unabridged), Hardback, iBooks...</td>
-      <td>Nook, Audiobook (abridged), Hardback, iBooks, ...</td>
-      <td>Nook, Audiobook (unabridged), Hardback, Kindle</td>
-    </tr>
-    <tr>
-      <th>Last updated</th>
-      <td>June 19, 2019</td>
-      <td>May 06, 2019</td>
-      <td>October 18, 2017</td>
-      <td>June 19, 2019</td>
-      <td>January 18, 2019</td>
-    </tr>
-    <tr>
-      <th>Illustrator</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Iacopo Bruno</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Authors</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Awards</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Publishers</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Award</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Illustrators</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">missingno</span> <span class="k">as</span> <span class="nn">msno</span> 
 </pre></div>
 
@@ -847,7 +901,7 @@ memory usage: 1.1+ MB
 <p></p>
 <div class="footnotes"><p id="fn-1">1. <a href="#fnref-1" class="footnote footnotes">↩</a></p></div>
 <br>
-
+<div class="footnotes"><p id="fn-2">2. <a href="#fnref-2" class="footnote footnotes">↩</a></p></div>
 
 </div>
 </div>
