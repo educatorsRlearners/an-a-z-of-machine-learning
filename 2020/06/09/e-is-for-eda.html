@@ -607,6 +607,57 @@ memory usage: 1.1+ MB
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The picture is becoming clearer. Again, since I collected the data, I know that the target is <code>csm_rating</code> which is the minimum age Common Sense Media (CSM) says a reader should be for the given book.</p>
+<h4 id="Investigate-the-Target">Investigate the Target<a class="anchor-link" href="#Investigate-the-Target"> </a>
+</h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">'csm_rating'</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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%0A">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Clearly we have skewed data when we split the data into<code>train-test-validate</code> splits, we'll need to do a <a href="https://www.investopedia.com/terms/stratified_random_sampling.asp#:~:text=Stratified%20random%20sampling%20is%20a,as%20income%20or%20educational%20attainment.">stratified random sample</a>.</p>
+<h4 id="Checking-Null-Values">Checking Null Values<a class="anchor-link" href="#Checking-Null-Values"> </a>
+</h4>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
