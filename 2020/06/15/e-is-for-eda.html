@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?" />
 <meta property="og:description" content="What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?" />
-<link rel="canonical" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html" />
-<meta property="og:url" content="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html" />
+<link rel="canonical" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html" />
+<meta property="og:url" content="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html" />
 <meta property="og:site_name" content="An A to Z of Machine Learning" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-13T00:00:00-05:00" />
+<meta property="article:published_time" content="2020-06-15T00:00:00-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html"},"description":"What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?","@type":"BlogPosting","url":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html","headline":"E is for Exploratory Data Analysis - Part I Numeric Data","dateModified":"2020-06-13T00:00:00-05:00","datePublished":"2020-06-13T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html"},"description":"What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?","@type":"BlogPosting","url":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html","headline":"E is for Exploratory Data Analysis - Part I Numeric Data","dateModified":"2020-06-15T00:00:00-05:00","datePublished":"2020-06-15T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/an-a-z-of-machine-learning/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/feed.xml" title="An A to Z of Machine Learning" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -30,13 +30,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?" />
 <meta property="og:description" content="What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?" />
-<link rel="canonical" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html" />
-<meta property="og:url" content="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html" />
+<link rel="canonical" href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html" />
+<meta property="og:url" content="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html" />
 <meta property="og:site_name" content="An A to Z of Machine Learning" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-13T00:00:00-05:00" />
+<meta property="article:published_time" content="2020-06-15T00:00:00-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html"},"description":"What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?","@type":"BlogPosting","url":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html","headline":"E is for Exploratory Data Analysis - Part I Numeric Data","dateModified":"2020-06-13T00:00:00-05:00","datePublished":"2020-06-13T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html"},"description":"What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?","@type":"BlogPosting","url":"https://educatorsrlearners.github.io/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html","headline":"E is for Exploratory Data Analysis - Part I Numeric Data","dateModified":"2020-06-15T00:00:00-05:00","datePublished":"2020-06-15T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -103,8 +103,8 @@ window.onload = wrap_img;
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">E is for Exploratory Data Analysis - Part I Numeric Data</h1>
 <p class="page-description">What is Exploratory Data Analysis (EDA), why is it done, and how do we do it in Python?</p>
-<p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-06-13T00:00:00-05:00" itemprop="datePublished">
-        Jun 13, 2020
+<p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-06-15T00:00:00-05:00" itemprop="datePublished">
+        Jun 15, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -114,32 +114,25 @@ window.onload = wrap_img;
 </span></p>
 
     
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i> 
-      
-        <a class="category-tags-link" href="/an-a-z-of-machine-learning/categories/#draft">draft</a>
-        
-      
-      </p>
-    
 
     
       
         <div class="pb-5 d-flex flex-wrap flex-justify-end">
           <div class="px-2">
 
-    <a href="https://github.com/educatorsRlearners/an-a-z-of-machine-learning/tree/master/_notebooks/2020-06-13-e-is-for-eda.ipynb" role="button" target="_blank">
+    <a href="https://github.com/educatorsRlearners/an-a-z-of-machine-learning/tree/master/_notebooks/2020-06-15-e-is-for-eda.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/an-a-z-of-machine-learning/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/educatorsRlearners/an-a-z-of-machine-learning/master?filepath=_notebooks%2F2020-06-13-e-is-for-eda.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/educatorsRlearners/an-a-z-of-machine-learning/master?filepath=_notebooks%2F2020-06-15-e-is-for-eda.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/an-a-z-of-machine-learning/assets/badges/binder.svg" alt="Open In Binder">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/educatorsRlearners/an-a-z-of-machine-learning/blob/master/_notebooks/2020-06-13-e-is-for-eda.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/educatorsRlearners/an-a-z-of-machine-learning/blob/master/_notebooks/2020-06-15-e-is-for-eda.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/an-a-z-of-machine-learning/assets/badges/colab.svg" alt="Open In Colab">
     </a>
 </div>
@@ -151,7 +144,7 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2020-06-13-e-is-for-eda.ipynb
+# file to edit: _notebooks/2020-06-15-e-is-for-eda.ipynb
 -->
 
 <div class="container" id="notebook-container">
@@ -214,24 +207,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Hide</span>
-<span class="kn">import</span> <span class="nn">warnings</span><span class="p">;</span> <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -982,7 +957,8 @@ dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_numeric</span><span class="p">[</span><span class="s1">'pub_rating'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">"publisher</span><span class="se">\'</span><span class="s2">s_recommended_ages"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"-"</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Create a column with the minimum age</span>
+<span class="n">df_numeric</span><span class="p">[</span><span class="s1">'pub_rating'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">"publisher</span><span class="se">\'</span><span class="s2">s_recommended_ages"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"-"</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> 
 
 <span class="c1">#Set the column as numeric</span>
 <span class="n">df_numeric</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">'pub_rating'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_numeric</span><span class="p">[</span><span class="s1">'pub_rating'</span><span class="p">])</span>
@@ -1002,7 +978,7 @@ dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_numeric</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_numeric</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
     </div>
@@ -1034,58 +1010,60 @@ dtype: object</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>par_rating</th>
-      <th>kids_rating</th>
-      <th>csm_rating</th>
-      <th>number_of_pages</th>
-      <th>publisher's_recommended_ages</th>
-      <th>pub_rating</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>17.0</td>
-      <td>14.0</td>
-      <td>12</td>
-      <td>336.0</td>
-      <td>12 - 18</td>
-      <td>12.0</td>
+      <th>par_rating</th>
+      <td>17</td>
+      <td>NaN</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>NaN</td>
-      <td>14.0</td>
+      <th>kids_rating</th>
       <td>14</td>
-      <td>304.0</td>
-      <td>14 - 17</td>
-      <td>14.0</td>
+      <td>14</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>11.0</td>
-      <td>11.0</td>
+      <th>csm_rating</th>
+      <td>12</td>
+      <td>14</td>
       <td>8</td>
-      <td>496.0</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>number_of_pages</th>
+      <td>336</td>
+      <td>304</td>
+      <td>496</td>
+      <td>320</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <th>publisher's_recommended_ages</th>
+      <td>12 - 18</td>
+      <td>14 - 17</td>
       <td>8 - 17</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>13</td>
-      <td>320.0</td>
       <td>14 - 18</td>
-      <td>14.0</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>13</td>
-      <td>240.0</td>
-      <td>NaN</td>
+      <th>pub_rating</th>
+      <td>12</td>
+      <td>14</td>
+      <td>8</td>
+      <td>14</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -1117,7 +1095,7 @@ dtype: object</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_numeric</span> <span class="o">=</span> <span class="n">df_numeric</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">"publisher's_recommended_ages"</span><span class="p">)</span>
-<span class="n">df_numeric</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">df_numeric</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
     </div>
@@ -1149,52 +1127,52 @@ dtype: object</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>par_rating</th>
-      <th>kids_rating</th>
-      <th>csm_rating</th>
-      <th>number_of_pages</th>
-      <th>pub_rating</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <th>par_rating</th>
       <td>17.0</td>
+      <td>NaN</td>
+      <td>11.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>kids_rating</th>
       <td>14.0</td>
-      <td>12</td>
-      <td>336.0</td>
+      <td>14.0</td>
+      <td>11.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>csm_rating</th>
       <td>12.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>NaN</td>
       <td>14.0</td>
-      <td>14</td>
-      <td>304.0</td>
-      <td>14.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>11.0</td>
-      <td>11.0</td>
-      <td>8</td>
-      <td>496.0</td>
       <td>8.0</td>
+      <td>13.0</td>
+      <td>13.0</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>13</td>
+      <th>number_of_pages</th>
+      <td>336.0</td>
+      <td>304.0</td>
+      <td>496.0</td>
       <td>320.0</td>
-      <td>14.0</td>
+      <td>240.0</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>13</td>
-      <td>240.0</td>
+      <th>pub_rating</th>
+      <td>12.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>14.0</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -1214,7 +1192,7 @@ dtype: object</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Everything is in order so lets dig in and start by</p>
-<h3 id="Inspect-the-target">Inspect the target<a class="anchor-link" href="#Inspect-the-target"> </a>
+<h3 id="Inspecting-the-target">Inspecting the target<a class="anchor-link" href="#Inspecting-the-target"> </a>
 </h3>
 </div>
 </div>
@@ -1618,9 +1596,15 @@ Name: csm_rating, dtype: float64</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="What-about-potential-outliers?">What about potential outliers?<a class="anchor-link" href="#What-about-potential-outliers?"> </a>
 </h3>
-<p>A final step in EDA is to search for potential outliers.</p>
-<p>The good news is that I chose to scrape Common Sense Media's book reviews because I felt confident in their ratings based on my knowledge of the domain. However, the old maxim of "Trust, but verify" exists for a reason.</p>
-<p>This post is already much longer than I had planned so I won't go through all the numeric features but a really simple one to investigate is the relationship between ratings and the length of the book.</p>
+<p>A final step in EDA is to search for potential outliers which are values significantly different from the norm.</p>
+<p>Our dataset could contain outliers for a couple of reasons:</p>
+<ul>
+<li>data is miskeyed in, (e.g., someone types "100" instead of "10")</li>
+<li>the observation genuinely is significantly different from the norm <sup id="fnref-4" class="footnote-ref"><a href="#fn-4">4</a></sup> </li>
+</ul>
+<p>The good news is that I chose to scrape Common Sense Media's book reviews because I felt confident in their ratings based on my knowledge of the domain and, given the professionalism of the organization, we can be fairly certain of the veracity of the data.</p>
+<p>However, the old maxim of "Trust, but verify" exists for a reason.</p>
+<p>This post is already much longer than I had planned so I won't go through all the numeric features, nor the multiple ways of <a href="https://statisticsbyjim.com/basics/outliers/">identifying outliers</a>, but a really simple one to plot the relationships between features so lets investigate the relationship between ratings and book length.</p>
 
 </div>
 </div>
@@ -1810,6 +1794,8 @@ Name: csm_rating, dtype: float64</pre>
 <div class="footnotes"><p id="fn-2">2. You can find the code <a href="https://github.com/educatorsRlearners/book-maturity/blob/master/00_get_search_pages.ipynb">here</a><a href="#fnref-2" class="footnote footnotes">↩</a></p></div>
 <br>
 <div class="footnotes"><p id="fn-3">3. Big <em>Thank You</em> to <a href="https://medium.com/@chaimgluck1/working-with-pandas-fixing-messy-column-names-42a54a6659cd">Chaim Gluck</a> for providing this tip<a href="#fnref-3" class="footnote footnotes">↩</a></p></div>
+<br>
+<div class="footnotes"><p id="fn-4">4. <a href="#fnref-4" class="footnote footnotes">↩</a></p></div>
 
 </div>
 </div>
@@ -1821,7 +1807,7 @@ Name: csm_rating, dtype: float64</pre>
   </div>
 <!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js" repo="educatorsRlearners/an-a-z-of-machine-learning" issue-term="title" label="blogpost-comment" theme="github-light" crossorigin="anonymous" async>
-</script><a class="u-url" href="/an-a-z-of-machine-learning/draft/2020/06/13/e-is-for-eda.html" hidden></a>
+</script><a class="u-url" href="/an-a-z-of-machine-learning/2020/06/15/e-is-for-eda.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
