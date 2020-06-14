@@ -2,8 +2,7 @@
 toc: false
 layout: post
 description: Purpose behind starting another machine learning blog.
-categories: [opinion]
-sticky_rank: 1
+categories: [A]
 hide: false
 title: A is for Aim
 ---
