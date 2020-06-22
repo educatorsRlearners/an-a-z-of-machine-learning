@@ -109,7 +109,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      13 min read
     
 </span></p>
 
@@ -815,7 +815,7 @@ memory usage: 1.1+ MB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_text</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_text</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
     </div>
@@ -847,100 +847,112 @@ memory usage: 1.1+ MB
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>title</th>
-      <th>description</th>
-      <th>plot</th>
-      <th>csm_review</th>
-      <th>need_to_know</th>
-      <th>author</th>
-      <th>genre</th>
-      <th>topics</th>
-      <th>book_type</th>
-      <th>publisher</th>
-      <th>available_on</th>
-      <th>illustrator</th>
-      <th>authors</th>
-      <th>awards</th>
-      <th>publishers</th>
-      <th>award</th>
-      <th>illustrators</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <th>title</th>
       <td>The Third Twin</td>
-      <td>Gripping thriller skimps on character developm...</td>
-      <td>Twins Ava and Alexa "Lexi" Rios live in an aff...</td>
-      <td>THE THIRD TWIN has an interesting, compelling ...</td>
-      <td>Parents need to know that The Third Twin is a ...</td>
-      <td>CJ Omololu</td>
-      <td>Mystery</td>
-      <td>Adventures, Brothers and Sisters, Friendship, ...</td>
-      <td>Fiction</td>
-      <td>Delacorte Press</td>
-      <td>Nook, Hardback, iBooks, Kindle</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
       <td>Small Damages</td>
-      <td>Luminous story of pregnant teen's summer in Sp...</td>
-      <td>It's the summer of 1996, which 18-year-old Ken...</td>
-      <td>This could well have been a minefield of clich...</td>
-      <td>Parents need to know that Small Damages is nar...</td>
-      <td>Beth Kephart</td>
-      <td>Coming of Age</td>
-      <td>Friendship, History, Horses and Farm Animals</td>
-      <td>Fiction</td>
-      <td>Philomel</td>
-      <td>Nook, Hardback, iBooks, Kindle</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>The School for Good and Evil, Book 1</td>
+      <td>Agent of Chaos: The X-Files Origins, Book 1</td>
+      <td>Crossing Ebenezer Creek</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>The School for Good and Evil, Book 1</td>
+      <th>description</th>
+      <td>Gripping thriller skimps on character developm...</td>
+      <td>Luminous story of pregnant teen's summer in Sp...</td>
       <td>Fractured fairy tale has plenty of twists for ...</td>
+      <td>Series pictures Mulder as teen, captures essen...</td>
+      <td>Heartbreaking novel follows freed slaves on Sh...</td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>Twins Ava and Alexa "Lexi" Rios live in an aff...</td>
+      <td>It's the summer of 1996, which 18-year-old Ken...</td>
       <td>When best friends Sophie and Agatha are stolen...</td>
+      <td>Set in 1979, AGENT OF CHAOS follows a 17-year-...</td>
+      <td>CROSSING EBENEZER CREEK is a YA novel from awa...</td>
+    </tr>
+    <tr>
+      <th>csm_review</th>
+      <td>THE THIRD TWIN has an interesting, compelling ...</td>
+      <td>This could well have been a minefield of clich...</td>
       <td>The School for Good and Evil is no run-of-the-...</td>
+      <td>Popular TV characters don't always make a smoo...</td>
+      <td>Beautifully written and poetically rendered, t...</td>
+    </tr>
+    <tr>
+      <th>need_to_know</th>
+      <td>Parents need to know that The Third Twin is a ...</td>
+      <td>Parents need to know that Small Damages is nar...</td>
       <td>Parents need to know that The School for Good ...</td>
+      <td>Parents need to know that Agent of Chaos: The ...</td>
+      <td>Parents need to know that Crossing Ebenezer Cr...</td>
+    </tr>
+    <tr>
+      <th>author</th>
+      <td>CJ Omololu</td>
+      <td>Beth Kephart</td>
       <td>Soman Chainani</td>
+      <td>Kami Garcia</td>
+      <td>Tonya Bolden</td>
+    </tr>
+    <tr>
+      <th>genre</th>
+      <td>Mystery</td>
+      <td>Coming of Age</td>
       <td>Fairy Tale</td>
+      <td>Science Fiction</td>
+      <td>Historical Fiction</td>
+    </tr>
+    <tr>
+      <th>topics</th>
+      <td>Adventures, Brothers and Sisters, Friendship, ...</td>
+      <td>Friendship, History, Horses and Farm Animals</td>
       <td>Magic and Fantasy, Princesses, Fairies, Mermai...</td>
+      <td>Magic and Fantasy, Adventures, Great Boy Role ...</td>
+      <td>Friendship, History</td>
+    </tr>
+    <tr>
+      <th>book_type</th>
       <td>Fiction</td>
+      <td>Fiction</td>
+      <td>Fiction</td>
+      <td>Fiction</td>
+      <td>Fiction</td>
+    </tr>
+    <tr>
+      <th>publisher</th>
+      <td>Delacorte Press</td>
+      <td>Philomel</td>
       <td>HarperCollins Children's Books</td>
+      <td>Imprint</td>
+      <td>Bloomsbury Children's Books</td>
+    </tr>
+    <tr>
+      <th>available_on</th>
+      <td>Nook, Hardback, iBooks, Kindle</td>
+      <td>Nook, Hardback, iBooks, Kindle</td>
       <td>Nook, Audiobook (unabridged), Hardback, iBooks...</td>
+      <td>Nook, Audiobook (abridged), Hardback, iBooks, ...</td>
+      <td>Nook, Audiobook (unabridged), Hardback, Kindle</td>
+    </tr>
+    <tr>
+      <th>illustrator</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Iacopo Bruno</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>Agent of Chaos: The X-Files Origins, Book 1</td>
-      <td>Series pictures Mulder as teen, captures essen...</td>
-      <td>Set in 1979, AGENT OF CHAOS follows a 17-year-...</td>
-      <td>Popular TV characters don't always make a smoo...</td>
-      <td>Parents need to know that Agent of Chaos: The ...</td>
-      <td>Kami Garcia</td>
-      <td>Science Fiction</td>
-      <td>Magic and Fantasy, Adventures, Great Boy Role ...</td>
-      <td>Fiction</td>
-      <td>Imprint</td>
-      <td>Nook, Audiobook (abridged), Hardback, iBooks, ...</td>
-      <td>NaN</td>
+      <th>authors</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -948,19 +960,7 @@ memory usage: 1.1+ MB
       <td>NaN</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>Crossing Ebenezer Creek</td>
-      <td>Heartbreaking novel follows freed slaves on Sh...</td>
-      <td>CROSSING EBENEZER CREEK is a YA novel from awa...</td>
-      <td>Beautifully written and poetically rendered, t...</td>
-      <td>Parents need to know that Crossing Ebenezer Cr...</td>
-      <td>Tonya Bolden</td>
-      <td>Historical Fiction</td>
-      <td>Friendship, History</td>
-      <td>Fiction</td>
-      <td>Bloomsbury Children's Books</td>
-      <td>Nook, Audiobook (unabridged), Hardback, Kindle</td>
-      <td>NaN</td>
+      <th>awards</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -968,39 +968,7 @@ memory usage: 1.1+ MB
       <td>NaN</td>
     </tr>
     <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>5811</th>
-      <td>The Fold</td>
-      <td>Insightful and frank novel explores beauty in ...</td>
-      <td>Joyce has a cute crush that doesn't know she e...</td>
-      <td>An Na has written a beautiful, poignant coming...</td>
-      <td>Parents need to know that this book deals with...</td>
-      <td>An Na</td>
-      <td>Coming of Age</td>
-      <td>NaN</td>
-      <td>Fiction</td>
-      <td>Putnam Juvenile</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>publishers</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1008,39 +976,7 @@ memory usage: 1.1+ MB
       <td>NaN</td>
     </tr>
     <tr>
-      <th>5812</th>
-      <td>Secrets of the Terra-Cotta Soldier</td>
-      <td>Boy joins a come-to-life clay soldier in excit...</td>
-      <td>Ming, a 14-year-old boy in 1970s China, is at ...</td>
-      <td>SECRETS OF THE TERRA-COTTA SOLDIER is an excit...</td>
-      <td>Parents need to know that Secrets of the Terra...</td>
-      <td>NaN</td>
-      <td>Historical Fiction</td>
-      <td>Adventures, Friendship, History, Horses and Fa...</td>
-      <td>Fiction</td>
-      <td>Amulet Books</td>
-      <td>Nook, Hardback, Kindle</td>
-      <td>NaN</td>
-      <td>Ying Chang Compestine, Vinson Compestine</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5813</th>
-      <td>Fallout: Lois Lane, Book 1</td>
-      <td>Comics reporter updated as teen in fun, slick ...</td>
-      <td>As the new girl at Metropolis High, Army brat ...</td>
-      <td>Author Gwenda Bond has Lois' lingo and attitud...</td>
-      <td>Parents need to know that Fallout reimagines S...</td>
-      <td>Gwenda Bond</td>
-      <td>Science Fiction</td>
-      <td>Superheroes, Adventures, Great Girl Role Model...</td>
-      <td>Fiction</td>
-      <td>Switch Press</td>
-      <td>Hardback, iBooks, Kindle</td>
-      <td>NaN</td>
+      <th>award</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1048,39 +984,7 @@ memory usage: 1.1+ MB
       <td>NaN</td>
     </tr>
     <tr>
-      <th>5814</th>
-      <td>The Return of the King</td>
-      <td>The exciting and bittersweet conclusion of Fro...</td>
-      <td>The quest to destroy the One Ring of Power bef...</td>
-      <td>This concluding volume of Tolkien's three-book...</td>
-      <td>Parents need to know that if kids are ready to...</td>
-      <td>J.R.R. Tolkien</td>
-      <td>Fantasy</td>
-      <td>Magic and Fantasy, Princesses, Fairies, Mermai...</td>
-      <td>Fiction</td>
-      <td>Houghton Mifflin Children's Books</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5815</th>
-      <td>The Random House Book of Poetry for Children</td>
-      <td>Classic will be the most dog-eared on your shelf.</td>
-      <td>This treasury of 572 poems, some written but m...</td>
-      <td>Despite its no-nonsense title, THE RANDOM HOUS...</td>
-      <td>Parents need to know that this collection of p...</td>
-      <td>Jack Prelutsky</td>
-      <td>Poetry</td>
-      <td>NaN</td>
-      <td>Non-Fiction</td>
-      <td>Random House</td>
-      <td>NaN</td>
-      <td>Arnold Lobel</td>
+      <th>illustrators</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1089,7 +993,6 @@ memory usage: 1.1+ MB
     </tr>
   </tbody>
 </table>
-<p>5816 rows × 17 columns</p>
 </div>
 </div>
 
@@ -1462,8 +1365,7 @@ memory usage: 1.1+ MB
 <li>more/most popular of the authors in <code>authors</code>
 </li>
 </ul>
-<p>and I'm sure I could come up with even more if I thought about/Googled it but the key is to understand that no matter what we choose, it will have consequences when we build our model.</p>
-<p>For example, if we decide to use the values in the <code>authors</code> columns, we'll almost certainly have to one-hot encode that column rather than label encode.</p>
+<p>and I'm sure I could come up with even more if I thought about/Googled it but the key is to understand that no matter what we choose, it will have consequences when we build our model<sup id="fnref-2" class="footnote-ref"><a href="#fn-2">2</a></sup>.</p>
 <p>Next question which comes to mind is how many different authors are there?</p>
 
 </div>
@@ -1513,7 +1415,41 @@ Name: author, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Wow</span><span class="o">!</span> So we have just over
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Wow</span><span class="o">!</span> Nearly half our our observations contain a unique name. 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">author_count</span> <span class="o">=</span> <span class="n">df_text</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">'author'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">author_count</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">author_count</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1565,11 +1501,9 @@ Name: author, dtype: object</pre>
 <p></p>
 <div class="footnotes"><p id="fn-1">1. Adapted from <a href="https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm"><em>Engineering Statistics Handbook</em></a><a href="#fnref-1" class="footnote footnotes">↩</a></p></div>
 <br>
-<div class="footnotes"><p id="fn-2">2. You can find the code <a href="https://github.com/educatorsRlearners/book-maturity/blob/master/00_get_search_pages.ipynb">here</a><a href="#fnref-2" class="footnote footnotes">↩</a></p></div>
+<div class="footnotes"><p id="fn-2">2. See this post on <a href="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159">Smarter Ways to Encode Categorical Data</a><a href="#fnref-2" class="footnote footnotes">↩</a></p></div>
 <br>
 <div class="footnotes"><p id="fn-3">3. Big <em>Thank You</em> to <a href="https://medium.com/@chaimgluck1/working-with-pandas-fixing-messy-column-names-42a54a6659cd">Chaim Gluck</a> for providing this tip<a href="#fnref-3" class="footnote footnotes">↩</a></p></div>
-<br>
-<div class="footnotes"><p id="fn-4">4. <a href="http://www.chinadaily.com.cn/sports/2007-03/01/content_817159.htm#:~:text=When%20Yao%20was%20four%20years,was%20already%20above%20two%20meters.">Yao Ming really was 2 meters tall when he was 13</a><a href="#fnref-4" class="footnote footnotes">↩</a></p></div>
 
 </div>
 </div>
