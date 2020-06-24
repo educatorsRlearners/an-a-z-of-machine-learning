@@ -1378,7 +1378,7 @@ memory usage: 1.1+ MB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_text</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">'author'</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_text</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">'author'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -1393,11 +1393,167 @@ memory usage: 1.1+ MB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>count          5468
-unique         2668
-top       Dr. Seuss
-freq             39
-Name: author, dtype: object</pre>
+<pre>2668</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Wow! Nearly half our our observations contain a unique name.</p>
+<p>:thnking: <strong><em>Which authors are most represented in the data set</em></strong><br>
+:thnking: <strong><em>How many authors are only represented once?</em></strong></p>
+<p>Lets create a <a href="https://www.mathsteacher.com.au/year8/ch17_stat/03_freq/freq.htm">frequency table</a> to find out.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">author_counts</span> <span class="o">=</span> <span class="n">df_text</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s2">"title"</span><span class="p">,</span> <span class="s1">'author'</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'author'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">author_counts</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'title'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>author</th>
+      <th>title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>670</th>
+      <td>Dr. Seuss</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>2167</th>
+      <td>Rick Riordan</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>1470</th>
+      <td>Kevin Henkes</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>1916</th>
+      <td>Mo Willems</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>1965</th>
+      <td>Neil Gaiman</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>767</th>
+      <td>Eoin Colfer</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>2619</th>
+      <td>Walter Dean Myers</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>2643</th>
+      <td>William Joyce</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>1103</th>
+      <td>Jeff Kinney</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>1579</th>
+      <td>Lemony Snicket</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Given that I've scraped the data from a website focusing on children, teens, and young adults, the results above only make sense; authors like Dr. Seuss, Eoin Coifer (<em>Artemis Fowl</em>), and Lemony Snicket (<em>A Series of Unfortunate Events</em>) are famous children's authors whereas Rick Riordan (<em>Percy Jackson</em>), <a href="https://bookshop.org/books?keywords=Walter+Dean+Myers">Walter Dean Myers</a></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">author_counts</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX0AAAD7CAYAAACG50QgAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4xLjMsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy+AADFEAAAXlElEQVR4nO3de5hcdX3H8ffHBFBESEiWW5K6qUYoXrh0CXhHoxDAEtpCH7CVSGnzWANa0EqsfUy9UIO1IlaljRIgFkFElKgRjFzkaWsgCyIhBGQNkKwJZDGIFxQNfPvH+W0ZJrNzZufszrL+Pq/nOc+e8/v9vnN+Mzv7mTNnZnYUEZiZWR6eM9YTMDOzznHom5llxKFvZpYRh76ZWUYc+mZmGXHom5llZOJYT6CZqVOnRnd391hPw8xsXLntttseiYiuRn3P6tDv7u6mt7d3rKdhZjauSHpwqD6f3jEzy4hD38wsIw59M7OMOPTNzDLi0Dczy4hD38wsIw59M7OMOPTNzDLyrP5wVr3uRd9q2v/AkuM6NBMzs/HJR/pmZhlx6JuZZcShb2aWkdLQl7RM0lZJd9W1nynpXknrJH28pv39kvpS39E17XNTW5+kRSN7NczMrBWtvJB7CfAZYPlgg6Q3APOAV0TEE5L2Su0HAicDLwX2A74r6SWp7LPAm4F+YI2kFRFx90hdETMzK1ca+hFxs6Tuuua/A5ZExBNpzNbUPg+4IrXfL6kPmJ36+iJiA4CkK9JYh76ZWQe1e07/JcBrJd0i6XuSDkvt04BNNeP6U9tQ7TuQtEBSr6TegYGBNqdnZmaNtBv6E4HJwBHAPwBXShKgBmOjSfuOjRFLI6InInq6uhp+8YuZmbWp3Q9n9QNXR0QAt0p6Cpia2mfUjJsObE7rQ7WbmVmHtHuk/3XgjQDphdqdgUeAFcDJknaRNBOYBdwKrAFmSZopaWeKF3tXVJ28mZkNT+mRvqTLgSOBqZL6gcXAMmBZehvnb4H56ah/naQrKV6g3Q4sjIgn0+WcAVwHTACWRcS6Ubg+ZmbWRCvv3jlliK6/GmL8ucC5DdpXAiuHNTszMxtR/kSumVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWkdLQl7RM0tb0LVn1fe+VFJKmpm1J+rSkPkl3Sjq0Zux8SfelZf7IXg0zM2tFK0f6lwBz6xslzQDeDGysaT6G4ntxZwELgAvT2D0pvmbxcGA2sFjS5CoTNzOz4SsN/Yi4GdjWoOt84H1A1LTNA5ZHYTUwSdK+wNHAqojYFhGPAqto8EBiZmajq61z+pKOB34SET+s65oGbKrZ7k9tQ7U3uuwFknol9Q4MDLQzPTMzG8KwQ1/SrsAHgA826m7QFk3ad2yMWBoRPRHR09XVNdzpmZlZE+0c6b8ImAn8UNIDwHTgdkn7UBzBz6gZOx3Y3KTdzMw6aNihHxFrI2KviOiOiG6KQD80Ih4CVgCnpnfxHAE8FhFbgOuAoyRNTi/gHpXazMysg1p5y+blwPeB/SX1Szq9yfCVwAagD/g88E6AiNgGfARYk5YPpzYzM+ugiWUDIuKUkv7umvUAFg4xbhmwbJjzMzOzEeRP5JqZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlp5ZuzlknaKumumrZ/lXSPpDslfU3SpJq+90vqk3SvpKNr2uemtj5Ji0b+qpiZWZlWjvQvAebWta0CXhYRrwB+BLwfQNKBwMnAS1PN5yRNkDQB+CxwDHAgcEoaa2ZmHVQa+hFxM7Ctru07EbE9ba4Gpqf1ecAVEfFERNxP8V25s9PSFxEbIuK3wBVprJmZddBInNP/a+DbaX0asKmmrz+1DdW+A0kLJPVK6h0YGBiB6ZmZ2aBKoS/pA8B24LLBpgbDokn7jo0RSyOiJyJ6urq6qkzPzMzqTGy3UNJ84C3AnIgYDPB+YEbNsOnA5rQ+VLuZmXVIW0f6kuYC5wDHR8TjNV0rgJMl7SJpJjALuBVYA8ySNFPSzhQv9q6oNnUzMxuu0iN9SZcDRwJTJfUDiynerbMLsEoSwOqIeEdErJN0JXA3xWmfhRHxZLqcM4DrgAnAsohYNwrXx8zMmigN/Yg4pUHzRU3Gnwuc26B9JbByWLMzM7MR5U/kmpllxKFvZpYRh76ZWUYc+mZmGXHom5llxKFvZpYRh76ZWUYc+mZmGXHom5llxKFvZpYRh76ZWUYc+mZmGXHom5llxKFvZpYRh76ZWUYc+mZmGSkNfUnLJG2VdFdN256SVkm6L/2cnNol6dOS+iTdKenQmpr5afx96ft1zcysw1o50r8EmFvXtgi4PiJmAdenbYBjKL4XdxawALgQigcJiq9ZPByYDSwefKAwM7POKQ39iLgZ2FbXPA+4NK1fCpxQ0748CquBSZL2BY4GVkXEtoh4FFjFjg8kZmY2yto9p793RGwBSD/3Su3TgE014/pT21DtO5C0QFKvpN6BgYE2p2dmZo2M9Au5atAWTdp3bIxYGhE9EdHT1dU1opMzM8tdu6H/cDptQ/q5NbX3AzNqxk0HNjdpNzOzDmo39FcAg+/AmQ9cU9N+anoXzxHAY+n0z3XAUZImpxdwj0ptZmbWQRPLBki6HDgSmCqpn+JdOEuAKyWdDmwETkrDVwLHAn3A48BpABGxTdJHgDVp3Icjov7FYTMzG2WloR8RpwzRNafB2AAWDnE5y4Blw5qdmZmNKH8i18wsIw59M7OMOPTNzDLi0Dczy4hD38wsIw59M7OMOPTNzDLi0Dczy4hD38wsIw59M7OMOPTNzDLi0Dczy4hD38wsIw59M7OMOPTNzDLi0Dczy0il0Jd0lqR1ku6SdLmk50qaKekWSfdJ+rKkndPYXdJ2X+rvHokrYGZmrWs79CVNA94F9ETEy4AJwMnAecD5ETELeBQ4PZWcDjwaES8Gzk/jzMysg6qe3pkIPE/SRGBXYAvwRuCq1H8pcEJan5e2Sf1zJKni/s3MbBjaDv2I+AnwCYovRt8CPAbcBvwsIranYf3AtLQ+DdiUaren8VPqL1fSAkm9knoHBgbanZ6ZmTVQ5fTOZIqj95nAfsDzgWMaDI3BkiZ9TzdELI2Inojo6erqand6ZmbWQJXTO28C7o+IgYj4HXA18CpgUjrdAzAd2JzW+4EZAKl/D2Bbhf2bmdkwVQn9jcARknZN5+bnAHcDNwInpjHzgWvS+oq0Teq/ISJ2ONI3M7PRU+Wc/i0UL8jeDqxNl7UUOAc4W1IfxTn7i1LJRcCU1H42sKjCvM3MrA0Ty4cMLSIWA4vrmjcAsxuM/Q1wUpX9mZlZNf5ErplZRhz6ZmYZceibmWXEoW9mlhGHvplZRhz6ZmYZceibmWXEoW9mlhGHvplZRhz6ZmYZceibmWXEoW9mlhGHvplZRhz6ZmYZceibmWXEoW9mlpFKoS9pkqSrJN0jab2kV0raU9IqSfeln5PTWEn6tKQ+SXdKOnRkroKZmbWq6pH+BcC1EXEAcBCwnuJrEK+PiFnA9Tz9tYjHALPSsgC4sOK+zcxsmNoOfUm7A68jfQduRPw2In4GzAMuTcMuBU5I6/OA5VFYDUyStG/bMzczs2GrcqT/h8AAcLGkH0j6gqTnA3tHxBaA9HOvNH4asKmmvj+1PYOkBZJ6JfUODAxUmJ6ZmdWrEvoTgUOBCyPiEOBXPH0qpxE1aIsdGiKWRkRPRPR0dXVVmJ6ZmdWrEvr9QH9E3JK2r6J4EHh48LRN+rm1ZvyMmvrpwOYK+zczs2FqO/Qj4iFgk6T9U9Mc4G5gBTA/tc0HrknrK4BT07t4jgAeGzwNZGZmnTGxYv2ZwGWSdgY2AKdRPJBcKel0YCNwUhq7EjgW6AMeT2PNzKyDKoV+RNwB9DTomtNgbAALq+zPzMyq8Sdyzcwy4tA3M8uIQ9/MLCMOfTOzjDj0zcwy4tA3M8uIQ9/MLCMOfTOzjDj0zcwy4tA3M8uIQ9/MLCMOfTOzjDj0zcwyUvVfK48b3Yu+1bT/gSXHdWgmZmZjx0f6ZmYZceibmWWkcuhLmiDpB5K+mbZnSrpF0n2Svpy+VQtJu6TtvtTfXXXfZmY2PCNxpP9uYH3N9nnA+RExC3gUOD21nw48GhEvBs5P48zMrIMqhb6k6cBxwBfStoA3AlelIZcCJ6T1eWmb1D8njTczsw6peqT/KeB9wFNpewrws4jYnrb7gWlpfRqwCSD1P5bGP4OkBZJ6JfUODAxUnJ6ZmdVqO/QlvQXYGhG31TY3GBot9D3dELE0Inoioqerq6vd6ZmZWQNV3qf/auB4SccCzwV2pzjynyRpYjqanw5sTuP7gRlAv6SJwB7Atgr7NzOzYWr7SD8i3h8R0yOiGzgZuCEi/hK4ETgxDZsPXJPWV6RtUv8NEbHDkb6ZmY2e0Xif/jnA2ZL6KM7ZX5TaLwKmpPazgUWjsG8zM2tiRP4NQ0TcBNyU1jcAsxuM+Q1w0kjsz8zM2uNP5JqZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlx6JuZZcShb2aWEYe+mVlGHPpmZhlp+0tUJM0AlgP7AE8BSyPiAkl7Al8GuoEHgL+IiEclCbgAOBZ4HHh7RNxebfqd073oW0P2PbDkuA7OxMysfVWO9LcD74mIPwKOABZKOpDiaxCvj4hZwPU8/bWIxwCz0rIAuLDCvs3MrA1Vvhh9y+CRekT8AlgPTAPmAZemYZcCJ6T1ecDyKKwGJknat+2Zm5nZsI3IOX1J3cAhwC3A3hGxBYoHBmCvNGwasKmmrD+11V/WAkm9knoHBgZGYnpmZpZUDn1JuwFfBf4+In7ebGiDttihIWJpRPRERE9XV1fV6ZmZWY1KoS9pJ4rAvywirk7NDw+etkk/t6b2fmBGTfl0YHOV/ZuZ2fC0Hfrp3TgXAesj4pM1XSuA+Wl9PnBNTfupKhwBPDZ4GsjMzDqj7bdsAq8G3gaslXRHavtHYAlwpaTTgY3ASalvJcXbNfso3rJ5WoV9m5lZG9oO/Yj4bxqfpweY02B8AAvb3Z+ZmVXnT+SamWXEoW9mlhGHvplZRhz6ZmYZceibmWXEoW9mlpEq79O3FjX7t8zgf81sZp3jI30zs4w49M3MMuLQNzPLiM/pP8v59QAzG0k+0jczy4hD38wsIz6983vMp4bMrJ6P9M3MMuIjfRtSs2cKfpZgNj51/Ehf0lxJ90rqk7So0/s3M8tZR4/0JU0APgu8meKL0tdIWhERd3dyHjb6qjxLqPJahF/HMGuu06d3ZgN9EbEBQNIVwDzAoW9jruoDhk+H2Xig4qtrO7Qz6URgbkT8Tdp+G3B4RJxRM2YBsCBt7g/c2+QipwKPtDmdsaody337Oo+P2rHct6/z+Kgtq39hRHQ17ImIji3AScAXarbfBvx7hcvrHW+143Xevs6+vXydnz21Veo7/UJuPzCjZns6sLnDczAzy1anQ38NMEvSTEk7AycDKzo8BzOzbHX0hdyI2C7pDOA6YAKwLCLWVbjIpeOwdiz37es8PmrHct++zuOjtu36jr6Qa2ZmY8v/hsHMLCMOfTOzjDj0zcwykk3oSzpA0hxJu9W1z22hdrakw9L6gZLOlnRsm/NY3k5dqn1N2vdRLYw9XNLuaf15kj4k6RuSzpO0R0ntuyTNaDamSe3Okk6V9Ka0/VZJn5G0UNJO7Vxmp0h6kaT3SrpA0r9JekfZbWXjn6S9xnoOwyVpStu1vw8v5Eo6LSIubtL/LmAhsB44GHh3RFyT+m6PiEOb1C4GjqF4p9Mq4HDgJuBNwHURcW6T2vq3owp4A3ADQEQcX3K9bo2I2Wn9b9N1+BpwFPCNiFjSpHYdcFB6x9RS4HHgKmBOav+zJrWPAb8CfgxcDnwlIgaazbWm9jKK22pX4GfAbsDVab+KiPmtXE6npfvInwDfA44F7gAeBf4UeGdE3DR2sxseSXtFxNYx2O+UiPhpC+OeA7wd+HOKz+psB+4D/mO0b2dJe9Y3AbcBh1DcP7c1qZ0bEdem9T2ATwKHAXcBZ0XEw6M05yXAJyLiEUk9wJXAU8BOwKkR8b1hXWCVT4Q9WxZgY0n/WmC3tN4N9FIEP8APWqidQBFiPwd2T+3PA+4sqb0d+C/gSOD16eeWtP76Fq7XD2rW1wBdaf35wNqS2vW186jru6NsvxTPAo8CLgIGgGuB+cALSmrvTD8nAg8DE9K2ym6vFm6Pb5f07wEsAe4BfpqW9altUiu/57S+K3BTWv+DsvtIGrc78DHgi8Bb6/o+V1K7D3AhxT8jnAL8c5rPlcC+JbV71i1TgAeAycCeJbVz6267i4A7gS8Be5fULgGmpvUeYAPQBzxYdt8GLk7X8TXAp4APU/wTxu8CZ7ZwW/cAN6a/rRkUB2OPpb+RQ0pqnwLur1t+l35uKKm9vWb9C8BHgRcCZwFfb2HetwP/BLxomPf7tTXrNwKHpfWX0Manctv+A+z0ku6MjZa1wBMltXfXbe9GEWKfpIUAbLSetstqn5PuEKuAg1Nb0ztWXf0P0x/vlPpfblkQAV8BTkvrFwM9NXeUNWV3zrrtnYDjKY76B0pq7wJ2TvP+xWDwAM+l5oGoSf2hQyx/DGwpqb0OOAfYp6Ztn9S2qqR2LbBLWp8M3FZ7nVqY91cpgvAEig8cfrXm8m4vqb0WOBNYlO7T51A82JwJXFNSOyYhRoUgou7BH1idfu7S4n3kVopn36cAm4ATU/sc4Pslte9Nt/fLa9ruL9tng9vrjrq+plkwuB/gE8DGdB3OAvZroe4eYGLtbdXo99DqMqzBY7lQHDUenO6UtUs3sLmk9gZS6Na0TQSWA0+W1N4C7JrWn1PTvkfZH3PN2OkUIfwZSp6V1NU9QHEEdX/6uU9q363sTpbmdwnFKZpbUhBsoDh9cVBJ7ZAPKMDzSmrPSvt5EHgXcD3weYpQXdzCdX4y/b5ubLD8uqT23nb6Uv+7KQJ3afojG3zA7AJubmHe9SHwAeB/KB6wy0K/9sBiY7PLbVA7JiFWJYgoTqe8KK0fWnv7UneA1sbt1cqzssG/x08CL6DFAzGKfyNzNvCedB9XTV/ps9i62/u1wOeAh9J9e0GTujOB7wBvpHiG9CngdcCHgC+2MvdnXN5wC8ZqoXjq+Zoh+r7Uwi95nyH6Xl1Su8sQ7VNr/9BavA7HAf8yArfFrsDMFse+ADiI4ki56VP2mpqXVJzffqQjGGAScCIwu8Xau4BZQ/RtKqn9DvC+2usJ7E1x5PzdFvb90jTXA9q4zuupOShIbfOBdcCDJbU/rFn/aF1f6ZHcWIRYlSBKNRuBH1Ec0Bye2ruAj7cw7+9TnHo8ieLg4oTU/nqGcbqD4jWc1cBDLY5fXLcMnm7dB1jeQv0OD/4Up47nAheX1B4JfJni1OtaYCXFfyPeadj31eEWePEymksK3f2H6DuhpHYycB7FUei2tKxPbZNHed4fB97UoH0ucF9J7YdJrznVtb8YuGoYc+h0iA0VRBNbqH0lT58SOjA9+Bzb4rwPojiV923gAOACijcNrANe1UL9ARSngnajeG3uZYO/q+HU1v+eW6i9osL9q+397nBZ7U7Ci5dOL6RTLp2uHU/zrguxMbm9ymrTA8xqijdUfIziFOAHgZuBD4zmbU1xyvFe4OsUp0/n1fSVnYY7s93aKvOuMueGl1dlol68dHJhGK+HjGTteJ33s7WWCu+IG6F9V3knX1u1VeY90vvt9NclmjUl6c6huijOz49KbVVjNe/xWAtsj4gngccl/Tgifg4QEb+W9FRJbdV9T4iIX6b9PSDpSOAqSS9M9aNVW2XelfZbz6FvzzZ7A0dTfDCqloD/HcXaqsZq3uOx9reSdo2IxyneYFAUFh94Kg39ivt+SNLBEXEHQET8UtJbgGXAy0extsq8q+73GRz69mzzTYqnsnfUd0i6aRRrqxqreY/H2tdFxBMAEVEb8jtRvOOpTJV9n0rxCeD/FxHbgVMl/eco1kL7866632fuK50XMjOzDGTzD9fMzMyhb2aWFYe+mVlGHPpmZhlx6JuZZeT/AIRWEJzAyOA0AAAAAElFTkSuQmCC%0A">
 </div>
 
 </div>
@@ -1415,44 +1571,26 @@ Name: author, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Wow</span><span class="o">!</span> Nearly half our our observations contain a unique name. 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">author_counts</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
-    
+<div class="output_wrapper">
+<div class="output">
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<div class="output_area">
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">author_count</span> <span class="o">=</span> <span class="n">df_text</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">'author'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
 
-    </div>
-</div>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1658</pre>
 </div>
 
 </div>
-    
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">author_count</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">author_count</span><span class="p">)</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
