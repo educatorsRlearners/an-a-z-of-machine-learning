@@ -84,33 +84,33 @@
   
 
   
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-      ,"page10": {
+      ,"page3": {
           "title": "",
-          "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
+          "content": "User-agent: * Sitemap: https://educatorsRlearners.github.io/sitemap.xml .",
           "url": "https://educatorsrlearners.github.io/an-a-z-of-machine-learning/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
       
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
   
 
 }

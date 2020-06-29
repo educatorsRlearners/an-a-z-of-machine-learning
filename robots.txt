@@ -1,1 +1,2 @@
-Sitemap: https://educatorsrlearners.github.io/an-a-z-of-machine-learning/sitemap.xml
+User-agent: *
+Sitemap: https://educatorsRlearners.github.io/sitemap.xml
