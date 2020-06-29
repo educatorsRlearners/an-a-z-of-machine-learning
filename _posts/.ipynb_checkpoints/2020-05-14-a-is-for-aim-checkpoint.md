@@ -4,7 +4,7 @@ layout: post
 description: Purpose behind starting another machine learning blog.
 categories: [A]
 hide: false
-image: images/green-typewriter-on-brown-wooden-table-4052198.jpg
+image: images/a-is-for-aim/green-typewriter-on-brown-wooden-table-4052198.jpg
 title: A is for Aim
 ---
 ### ***TLDR:***
