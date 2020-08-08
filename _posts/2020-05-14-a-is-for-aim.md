@@ -69,6 +69,5 @@ Second, I just like the name and, honestly, what more reason do I need? :laughin
 ### Footnotes
 [^1]: Google search May 14th, 2020  
 [^2]: That is an idea for a future project, "What is the ratio of data science coding tutorials written by holders of PhDs compared to non-PhDs?"   
-[^3]: From the "Preface" to [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405)  
-[^4]: This quote is most likely an [amalgamation](https://www.quora.com/What-is-the-source-of-this-famous-quote-attributed-to-John-Dewey-We-do-not-learn-from-an-experience-We-learn-from-reflecting-on-an-experience) of several ideas which Dewey professed, but I still like it :smiley:  
-[^5]: From the "Preface" to [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/9780062720405)
+[^3]: From the "Preface" to [*Writing to Learn*](https://bookshop.org/books/writing-to-learn-rc/978006272040)  
+[^4]: This quote is most likely an [amalgamation](https://www.quora.com/What-is-the-source-of-this-famous-quote-attributed-to-John-Dewey-We-do-not-learn-from-an-experience-We-learn-from-reflecting-on-an-experience) of several ideas which Dewey professed, but I still like it :smiley:
