@@ -1,0 +1,5 @@
+---
+layout: none
+---
+User-agent: *
+Sitemap: https://educatorsrlearners.github.io/an-a-z-of-machine-learning/sitemap.xml
