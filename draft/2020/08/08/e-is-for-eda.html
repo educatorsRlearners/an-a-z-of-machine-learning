@@ -425,14 +425,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="What-do-our-covers-look-like?">What do our covers look like?<a class="anchor-link" href="#What-do-our-covers-look-like?"> </a>
-</h4>
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -440,7 +432,11 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_image_path</span><span class="p">(</span><span class="n">age</span><span class="p">):</span>
+    <span class="n">full_path</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'age'</span><span class="p">]</span><span class="o">==</span><span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">),</span> <span class="s1">'full_path'</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">full_path</span>
+
+<span class="n">random_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_image_path</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">18</span><span class="p">)]</span>
 </pre></div>
 
     </div>
@@ -450,6 +446,62 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">random_images</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['data/covers/2_ten-little-caterpillars.jpg',
+ 'data/covers/3_bully.jpg',
+ 'data/covers/4_thomas-big-storybook.jpg',
+ 'data/covers/5_yukon-sled-dog.png',
+ 'data/covers/6_all-in-a-day-0.jpg',
+ 'data/covers/7_enigma-a-magical-mystery.jpg',
+ 'data/covers/8_moonpenny-island.jpg',
+ 'data/covers/9_the-wide-window-a-series-of-unfortunate-events-book-3.jpg',
+ 'data/covers/10_the-care-and-keeping-of-you-2-the-body-book-for-older-girls.jpg',
+ 'data/covers/11_ways-to-live-forever.jpg',
+ 'data/covers/12_gilded.jpg',
+ 'data/covers/13_dance-of-thieves-book-1.jpg',
+ 'data/covers/14_the-madmans-daughter.jpg',
+ 'data/covers/15_a-sense-of-the-infinite.jpg',
+ 'data/covers/16_the-round-house.jpg',
+ 'data/covers/17_pretty-dead.jpg']</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="What-do-our-covers-look-like?">What do our covers look like?<a class="anchor-link" href="#What-do-our-covers-look-like?"> </a>
+</h4>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -475,7 +527,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ipyplot</span><span class="o">.</span><span class="n">plot_class_representations</span><span class="p">(</span><span class="n">images</span><span class="o">=</span><span class="n">images</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels_int</span><span class="p">,</span> <span class="n">force_b64</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dog</span> <span class="o">=</span> <span class="n">ipyplot</span><span class="o">.</span><span class="n">plot_class_representations</span><span class="p">(</span><span class="n">images</span><span class="o">=</span><span class="n">images</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels_int</span><span class="p">,</span> <span class="n">force_b64</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -586,26 +638,12 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">'help_me.png'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="nn">mpimg</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea ">
-<pre>&lt;Figure size 432x288 with 0 Axes&gt;</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
