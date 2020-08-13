@@ -272,9 +272,10 @@ window.onload = wrap_img;
 <h4 id="What-does-our-target-look-like?">What does our target look like?<a class="anchor-link" href="#What-does-our-target-look-like?"> </a>
 </h4>
 <p>To answer that question, we can create a data frame of the book titles and the target ages in our sample, and then plot the target.</p>
-<p>Since I scraped the data, I know the beginning of the file name is the target age, (i.e., 13 is the minimum age for the file '13_dance-of-thieves-book-1.jpg') so we can create a:</p>
+<p>Since I scraped the data, I know the beginning of the file name is the target age, (i.e., 13 is the minimum age for the file '13_dance-of-thieves-book-1.jpg') so we can create a data frame of the:</p>
 <ol>
-<li>data frame of the file names</li>
+<li>file names</li>
+<li>full paths</li>
 <li>target column called <code>age</code> by splitting the file name on the underscore and extracting the first element </li>
 </ol>
 
